@@ -6,7 +6,7 @@
         "slide-0": {
           "type": "slide",
           "settings": {
-            "image": "{{ shop.brand.cover_image }}",
+            "image": "shopify:\/\/shop_images\/pexels-tara-winstead-7722639_1.jpg",
             "heading": "Slideshow",
             "heading_size": "h1",
             "subheading": "Introduce a product or collection you'd like to highlight.",
@@ -23,6 +23,7 @@
         },
         "slide-1": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "heading": "Slideshow",
             "heading_size": "h1",
@@ -40,6 +41,7 @@
         },
         "slide-2": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "heading": "Slideshow",
             "heading_size": "h1",
