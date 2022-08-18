@@ -31,6 +31,11 @@
   --gradient-background: var(--gradient-base-accent-2);
 }
 
+.header-transparent{
+  color: white !important;
+  background-color: rgba(0,0,0,0) !important;
+}
+
 .color-foreground-outline-button {
   --color-foreground: var(--color-base-outline-button-labels);
 }
