@@ -210,6 +210,9 @@ main{
   width: 100%;
   word-wrap: break-word;
   z-index: 1;
+  top: 50%;
+  color: white;
+  font-size: 3rem
 }
 
 
