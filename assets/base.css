@@ -204,13 +204,13 @@ main{
 .slide_caption{
   padding: 4rem 3.5rem;
   position: absolute;
+  top: 50%;
   height: fit-content;
   align-items: center;
   text-align: center;
   width: 100%;
   word-wrap: break-word;
   z-index: 1;
-  padding-bottom: 50%;
   color: white;
   font-size: 3rem
 }
