@@ -109,6 +109,11 @@
               width="{{ block.settings.image.width }}"
               height="{{ block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round }}"
             >
+            
+          {%- if block.settings.slide_caption != blank -%}
+            <span class="slide_caption">{{ block.settings.slide_caption | escape }}</span>
+          {%- endif -%}
+
           {%- else -%}
             {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
           {%- endif -%}
@@ -131,9 +136,6 @@
             {%- endif -%}
           </div>
         </div>
-        {%- if block.settings.slide_caption != blank -%}
-        <span class="slide_caption">{{ block.settings.slide_caption | escape }}</span>
-      {%- endif -%}
       </div>
     {%- endfor -%}
   </div>
