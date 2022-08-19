@@ -262,9 +262,9 @@ html.no-js .no-js-hidden {
   z-index: 0;
 }
 
-.section + .section {
+/* .section + .section {
   margin-top: var(--spacing-sections-mobile);
-}
+} */
 
 /* @media screen and (min-width: 750px) {
   .section + .section {
@@ -272,7 +272,7 @@ html.no-js .no-js-hidden {
   }
 } */
 
-.element-margin-top {
+/* .element-margin-top {
   margin-top: 5rem;
 }
 
@@ -280,7 +280,7 @@ html.no-js .no-js-hidden {
   .element-margin {
     margin-top: calc(5rem + var(--page-width-margin));
   }
-}
+} */
 
 body,
 .color-background-1,
