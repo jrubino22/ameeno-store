@@ -116,7 +116,7 @@
 
         {%- if block.settings.slide_caption != blank -%}
         <div class="slide_caption">
-        <span>{{ block.settings.slide_caption | escape }}</span>
+        <span>{{ block.settings.slide_caption }}</span>
       </div>
       {%- endif -%}
     
@@ -353,7 +353,7 @@
           "default": false
         },
         {
-          "type": "html",
+          "type": "richtext",
           "id": "slide_caption", 
           "label": "caption"
         },
