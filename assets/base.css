@@ -2918,7 +2918,7 @@ details-disclosure > details {
   background-position: center !important; 
   background-repeat: no-repeat !important; 
   background-attachment: fixed !important; 
-  height: 400px; 
+  height: 100%; 
   color: #fff; 
   font-size: 18px; 
   font-size: 1.125rem; 
