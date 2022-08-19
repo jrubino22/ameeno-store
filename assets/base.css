@@ -2912,6 +2912,12 @@ details-disclosure > details {
 
 /* Parallax Video Style  */
 
+html, body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box !important;
+ }
+
 .video-wrapper {
   position: fixed;
   bottom: 0;
@@ -2937,6 +2943,7 @@ details-disclosure > details {
   width: 100%;
   max-width: 2144px;
 }
+
 
 .stretch1 {
   height: auto;
