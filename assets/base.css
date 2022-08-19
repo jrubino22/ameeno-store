@@ -200,6 +200,14 @@
 main{
   margin-top: -80px;
 }
+/* custom caption for banner */
+.slide-caption{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  right:50%
+}
+
 
 .no-js:not(html) {
   display: none !important;
