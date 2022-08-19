@@ -202,7 +202,7 @@ main{
 }
 /* custom caption for banner */
 .slide_caption{
-  margin: 50% 35%;
+  margin: 50% 50% auto auto;
   color: white;
   font-size: 3rem
 }
