@@ -196,6 +196,11 @@
 
 /* base */
 
+/* remove margin for header */
+main{
+  margin-top: -30px;
+}
+
 .no-js:not(html) {
   display: none !important;
 }
@@ -262,17 +267,17 @@ html.no-js .no-js-hidden {
   z-index: 0;
 }
 
-/* .section + .section {
+.section + .section {
   margin-top: var(--spacing-sections-mobile);
-} */
+}
 
-/* @media screen and (min-width: 750px) {
+@media screen and (min-width: 750px) {
   .section + .section {
     margin-top: var(--spacing-sections-desktop);
   }
-} */
+}
 
-/* .element-margin-top {
+.element-margin-top {
   margin-top: 5rem;
 }
 
@@ -280,7 +285,7 @@ html.no-js .no-js-hidden {
   .element-margin {
     margin-top: calc(5rem + var(--page-width-margin));
   }
-} */
+}
 
 body,
 .color-background-1,
