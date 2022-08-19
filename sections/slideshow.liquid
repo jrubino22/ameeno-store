@@ -111,7 +111,9 @@
             >
 
           {%- if block.settings.slide_caption != blank -%}
-            <span class="slide_caption">{{ block.settings.slide_caption | escape }}</span>
+            <div class="slide_caption">
+            <span>{{ block.settings.slide_caption | escape }}</span>
+          </div>
           {%- endif -%}
 
           {%- else -%}

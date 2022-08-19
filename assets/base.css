@@ -202,9 +202,10 @@ main{
 }
 /* custom caption for banner */
 .slide_caption{
-  margin: 20rem;
-  color: white;
-  font-size: 3rem
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 
