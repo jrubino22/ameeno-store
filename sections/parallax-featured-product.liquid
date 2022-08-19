@@ -1,11 +1,25 @@
 
-<div class="featured lazy">
- <!-- style="background: url({% if section.settings.img_product %}{{ section.settings.img_product }}{% else %}https://via.placeholder.com/1200x800{% endif %}) 50% 70%;">  -->
+<!-- <div class="featured lazy">
+ style="background: url({% if section.settings.img_product %}{{ section.settings.img_product }}{% else %}https://via.placeholder.com/1200x800{% endif %}) 50% 70%;"> 
   <video id="background-video" autoplay loop muted poster="{{ section.settings.img_product }}">
     <source src="{{ section.settings.img_product }}" type="video/mp4">
     </video>
-</div> 
+</div>  -->
 <!-- /featured --> 
+
+<div class="video-wrapper">
+  <figure>
+    <video loop muted="muted" autoplay>
+      <source src="{{ section.settings.img_product }}"/>
+    </video>
+  </figure>
+</div>
+<div class="stretch">
+<div class="codecontainer">
+<h2>{{ section.settings.section_title }}</h2>
+<p>{{ section.settings.section_content }}</p>
+  </div>
+</div>
   
 {% schema %} 
 { 
@@ -19,6 +33,16 @@
       "type": "text", 
       "id": "img_product", 
       "label": "Section image" 
+    },
+    { 
+      "type": "text", 
+      "id": "section_title", 
+      "label": "Section title" 
+    },
+    { 
+      "type": "richtext", 
+      "id": "section_text", 
+      "label": "Section content" 
     }
   ], 
   "presets": [ 
