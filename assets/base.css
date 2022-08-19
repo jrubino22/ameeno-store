@@ -3062,18 +3062,18 @@ details-disclosure > details {
   min-width: 100%;
   z-index: -9999;
 }
-.hero-wrapper figure {
+.video-wrapper figure {
   margin: 0;
   position: relative;
 }
-.hero-wrapper figure h1 {
+.video-wrapper figure h1 {
   position: absolute;
   top: 20px;
   left: 20px;
   border-right: 3px solid #fff;
   padding: 5px 10px 5px 5px;
 }
-.hero-wrapper video {
+.video-wrapper video {
   width: 100%;
   max-width: 100%;
 }
