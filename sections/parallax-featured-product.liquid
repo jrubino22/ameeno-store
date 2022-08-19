@@ -20,6 +20,12 @@
       <p>{{ section.settings.section_text }}</p>
     </div>
 </div>
+<div class="stretch2">
+  <div class="codecontainer">
+    <h2>{{ section.settings.section_title2 }}</h2>
+    <p>{{ section.settings.section_text2 }}</p>
+  </div>
+</div>
   
 {% schema %} 
 { 
@@ -37,12 +43,22 @@
     { 
       "type": "text", 
       "id": "section_title", 
-      "label": "Section title" 
+      "label": "Section title 1" 
     },
     { 
       "type": "richtext", 
       "id": "section_text", 
-      "label": "Section content" 
+      "label": "Section content 1" 
+    }
+    { 
+      "type": "text", 
+      "id": "section_title2", 
+      "label": "Section title 2" 
+    },
+    { 
+      "type": "richtext", 
+      "id": "section_text2", 
+      "label": "Section content 2" 
     }
   ], 
   "presets": [ 
