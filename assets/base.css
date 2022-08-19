@@ -201,13 +201,13 @@ main{
   margin-top: -80px;
 }
 /* custom caption for banner */
-.slide-caption{
+.slide_caption{
   position: absolute;
   top: 55%;
   left: 50%;
   right:50%;
   color: white;
-  font-size: 5rem
+  font-size: 3rem
 }
 
 
