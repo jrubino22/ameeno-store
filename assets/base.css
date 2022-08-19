@@ -204,7 +204,7 @@ main{
 .slide_caption{
   padding: 4rem 3.5rem;
   position: absolute;
-  top: 55%;
+  top: 58%;
   height: fit-content;
   align-items: center;
   text-align: center;
@@ -212,7 +212,7 @@ main{
   word-wrap: break-word;
   z-index: 1;
   color: white;
-  font-size: 5rem
+  font-size: 4.5rem
 }
 
 
