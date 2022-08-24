@@ -2919,9 +2919,9 @@ html, body {
  }
 
 .video-wrapper {
-  position: fixed;
+  position: absolute;
   bottom: 0;
-  /* right: 0; */
+  right: 0;
   height: auto;
   max-width: 100%;
   min-height: 100%;
