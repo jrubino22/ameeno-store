@@ -2932,6 +2932,8 @@ html, body {
 .video-wrapper figure {
   margin: 0;
   position: relative;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 .video-wrapper figure h1 {
   position: absolute;
