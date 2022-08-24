@@ -2923,7 +2923,7 @@ html, body {
   bottom: 0;
   right: 0;
   height: auto;
-  width: auto;
+  max-width: 100%;
   min-height: 100%;
   min-width: 100%;
   z-index: -9999;
@@ -2941,7 +2941,7 @@ html, body {
 }
 .video-wrapper video {
   width: 100%;
-  max-width: 2144px;
+  max-width: 100%;
 }
 
 
