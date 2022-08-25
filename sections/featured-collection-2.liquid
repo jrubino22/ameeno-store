@@ -1,6 +1,6 @@
 <div style="background-color: #91B5C5;">       
-    <div style="float: left; width: 40%; text-align: center; position: relative;">
-        <div class="fixedElement" style="position: absolute; top:0; max-width: 30%; text-align: left; display: inline-block; z-index: 100;">
+    <div class="leftDiv"style="float: left; width: 40%; text-align: center; position: relative;">
+        <div class="fixedElement" style="position: absolute; top:0; max-width: 20%; text-align: left; display: inline-block; z-index: 100;">
             <h3>{{ section.settings.description }}</h3>
         </div>
     </div>
@@ -25,10 +25,10 @@
     $(window).scroll(function(e){ 
   var $el = $('.fixedElement'); 
   var isPositionFixed = ($el.css('position') == 'fixed');
-  if ($(this).scrollTop() > 200 && !isPositionFixed){ 
+  if ($('.leftDiv').scrollTop() > 500 && !isPositionFixed){ 
     $el.css({'position': 'fixed', 'top': '50%'}); 
   }
-  if ($(this).scrollTop() < 200 && isPositionFixed){
+  if ($('.leftDiv').scrollTop() < 500 && isPositionFixed){
     $el.css({'position': 'static', 'top': '50%'}); 
   } 
 });
