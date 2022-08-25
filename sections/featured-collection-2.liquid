@@ -24,13 +24,13 @@
 <script>
     $(window).scroll(function(e){ 
   var $el = $('.fixedElement'); 
-  var fromTop = $('.leftDiv').offset().top - 50;
+  var fromTop = $('.leftDiv').offset().top;
   var isPositionFixed = ($el.css('position') == 'fixed');
   if ($(this).scrollTop() > fromTop && !isPositionFixed){ 
     $el.css({'position': 'fixed', 'top': '50%', 'max-width': '20%', 'margin-left': '4%', 'display': 'inline-block'}); 
   }
   if ($(this).scrollTop() < fromTop && isPositionFixed){
-    $el.css({'position': 'static', 'top': '50%', 'max-width': '20%', 'margin-left': '4%', 'display': 'inline-block'}); 
+    $el.css({'position': 'static', 'top': '50%', 'max-width': '20%', 'margin-left': '4%', 'display': 'none'}); 
   } 
 });
 </script>
