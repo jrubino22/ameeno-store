@@ -24,11 +24,12 @@
 <script>
     $(window).scroll(function(e){ 
   var $el = $('.fixedElement'); 
+  var fromTop = $('.leftDiv').offset().top;
   var isPositionFixed = ($el.css('position') == 'fixed');
-  if ($('.leftDiv').scrollTop() > 500 && !isPositionFixed){ 
+  if ($(this).scrollTop() > fromTop && !isPositionFixed){ 
     $el.css({'position': 'fixed', 'top': '50%'}); 
   }
-  if ($('.leftDiv').scrollTop() < 500 && isPositionFixed){
+  if ($(this).scrollTop() < fromTop && isPositionFixed){
     $el.css({'position': 'static', 'top': '50%'}); 
   } 
 });
