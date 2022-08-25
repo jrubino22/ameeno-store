@@ -1,16 +1,16 @@
 <div style="background-color: #91B5C5;">       
     <div style="float: left; width: 40%; text-align: center">
-        <div style="position: fixed; max-width: 30%; text-align: left; display: inline-block">
+        <div style="position: fixed; max-width: 30%; text-align: left; display: inline-block; z-index: 1000;">
             <h3>{{ section.settings.description }}</h3>
         </div>
     </div>
     <div style="float: right; width: 60%">
         {% for product in section.settings.collection.products%}
             <div style="margin-top: 10%; margin-bottom: 20%;">
-                <div style="display: inline-block; vertical-align: top;">
+                <div style="display: inline-block; vertical-align: center;">
                     <a href={{ product.url }}><img src={{ product.featured_media | image_url: width: 300 }} /></a>
                 </div>
-                <div style="display: inline-block; max-width: 350px; vertical-align:top; text-align:left; padding-left: 7%">
+                <div style="display: inline-block; max-width: 350px; vertical-align: center; text-align:left; padding-left: 7%">
                     <h3>{{ product.title }}</h3>
                     <p>{{ product.metafields.custom.short_description}}</p>
                     <a href={{ product.url }}><button>Shop Now</button></a>
