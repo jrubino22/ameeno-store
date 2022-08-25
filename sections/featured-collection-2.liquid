@@ -27,6 +27,7 @@
   var fromTop = $('.leftDiv').offset().top;
   var isPositionFixed = ($el.css('position') == 'fixed');
   if ($(this).scrollTop() > fromTop && !isPositionFixed){ 
+    $el.fadeIn();
     $el.css({'position': 'fixed', 'top': '50%', 'max-width': '20%', 'margin-right': '10%', 'display': 'inline-block'}); 
   }
   if ($(this).scrollTop() < fromTop && isPositionFixed){
