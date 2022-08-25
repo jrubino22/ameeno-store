@@ -1,6 +1,6 @@
 <div style="background-color: #91B5C5;">       
-    <div class="leftDiv"style="float: left; width: 40%; text-align: center; position: relative;">
-        <div class="fixedElement" style="position: absolute">
+    <div class="leftDiv"style="float: left; width: 40%; text-align: center; position: relative; top: 50%">
+        <div class="fixedElement" style="position: absolute; max-width: 20%">
             <h3>{{ section.settings.description }}</h3>
         </div>
     </div>
@@ -27,10 +27,10 @@
   var fromTop = $('.leftDiv').offset().top - 50;
   var isPositionFixed = ($el.css('position') == 'fixed');
   if ($(this).scrollTop() > fromTop && !isPositionFixed){ 
-    $el.css({'position': 'fixed', 'top': '50%'}); 
+    $el.css({'position': 'fixed', 'top': '50%', 'max-width': '10%'}); 
   }
   if ($(this).scrollTop() < fromTop && isPositionFixed){
-    $el.css({'position': 'static', 'top': '50%'}); 
+    $el.css({'position': 'static', 'top': '50%', 'max-width': '10%'}); 
   } 
 });
 </script>
