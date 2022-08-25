@@ -1,7 +1,7 @@
 <div style="background-color: white">
     {% for product in section.settings.collection.products%}
         <div style=>
-            <img src={{ product || image_url: width: 80 }} />
+            {{ product || image_url: width: 80 }}
         </div>
     {% endfor %}
 </div>
