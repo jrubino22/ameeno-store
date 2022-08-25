@@ -6,7 +6,7 @@
     </div>
     <div style="float: right; width: 60%">
         {% for product in section.settings.collection.products%}
-            <div style="margin-top: 10%">
+            <div style="margin-top: 10%; margin-bottom: 20%;">
                 <div style="display: inline-block; vertical-align: top;">
                     <a href={{ product.url }}><img src={{ product.featured_media | image_url: width: 200 }} /></a>
                 </div>
