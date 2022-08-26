@@ -14,7 +14,7 @@
     </video>
   </figure>
 </div>
-  <div class="stretch1" style="visibility: hidden">
+  <div class="stretch1" style="width: 0px">
     <div class="codecontainer">
       <h2>{{ section.settings.section_title }}</h2>
       <p>{{ section.settings.section_text }}</p>
@@ -31,12 +31,11 @@
   $(window).scroll(function(e){ 
     var el1 = $('.stretch1'); 
     var viewportHeight = $("body").innerHeight()
-    var fromTop = el1.offset().top - viewportHeight
-    var divHeight = $('.fc2Div').height();
+    var halfDivHeight = el1.height() / 2;
+    var fromTop = el1.offset().top - viewportHeight + halfDivHeight;
     var bottomLimit = fromTop + divHeight - viewportHeight;
     if ($(this).scrollTop() > fromTop){ 
       el1.stop().animate({ "left": "+=50px" }, "slow" )
-      el1.css({'visibility': 'visible'}); 
     }
   });
 </script>
