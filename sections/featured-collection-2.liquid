@@ -37,13 +37,13 @@
   }
   if ($(this).scrollTop() < fromTop && isPositionFixed){
     $el.fadeOut();
-    $el.css({'position': 'static', 'top': '50%', 'max-width': '20%', 'margin-left': '4%', 'display': 'none'}); 
+    $el.css({'position':'absolute', 'display': 'none'}); 
   } 
   if ($(this).scrollTop() > bottomLimit && isPositionFixed){ 
     $el.fadeOut();
-    $el.css({'position': 'fixed', 'top': '50%', 'left': '15%', 'max-width': '20%', 'display':'none'}); 
+    $el.css({'position':'absolute', 'display':'none'}); 
   }
-  if ($(this).scrollTop() < fromTop && !isPositionFixed){
+  if ($(this).scrollTop() < bottomLimit && !isPositionFixed){
     $el.fadeIn('slow');
     $el.css({'position': 'fixed', 'top': '50%', 'max-width': '20%', 'margin-left': '4%', 'display': 'block'}); 
   } 
