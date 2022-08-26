@@ -29,7 +29,7 @@
   var viewportHeight = $("body"). innerHeight()
   var bottomLimit = fromTop + divHeight - viewportHeight
   var isPositionFixed = ($el.css('position') == 'fixed');
-  if ($(this).scrollTop() > fromTop && !isPositionFixed){ 
+  if ($(this).scrollTop() > fromTop && $(this).scrollTop() < bottomLimit && !isPositionFixed){ 
     console.log(fromTop)
     console.log(bottomLimit)
     $el.fadeIn('slow');
@@ -43,7 +43,7 @@
     $el.fadeOut();
     $el.css({'position':'absolute', 'display':'none'}); 
   }
-  if ($(this).scrollTop() < bottomLimit && !isPositionFixed){
+  if ($(this).scrollTop() < bottomLimit && $(this).scrollTop() > fromTop && !isPositionFixed){
     $el.fadeIn('slow');
     $el.css({'position': 'fixed', 'top': '50%', 'max-width': '20%', 'margin-left': '4%', 'display': 'block'}); 
   } 
