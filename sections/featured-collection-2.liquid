@@ -26,7 +26,7 @@
   var $el = $('.fixedElement'); 
   var fromTop = $('.leftDiv').offset().top;
   var divHeight = $('.fc2Div').height();
-  var viewportHeight = $("body"). innerHeight()
+  var viewportHeight = $("body").innerHeight()
   var bottomLimit = fromTop + divHeight - viewportHeight
   var isPositionFixed = ($el.css('position') == 'fixed');
   if ($(this).scrollTop() > fromTop && $(this).scrollTop() < bottomLimit && !isPositionFixed){ 

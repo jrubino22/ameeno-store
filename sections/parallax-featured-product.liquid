@@ -30,12 +30,12 @@
 <script>
   $(window).scroll(function(e){ 
     var el1 = $('.stretch1'); 
-    var viewportHeight = $("body"). innerHeight()
-    var fromTop = el1.offset().top; - viewportHeight
+    var viewportHeight = $("body").innerHeight()
+    var fromTop = el1.offset().top - viewportHeight
     var divHeight = $('.fc2Div').height();
     var bottomLimit = fromTop + divHeight - viewportHeight;
     if ($(this).scrollTop() > fromTop){ 
-      el1.fadeIn('slow');
+      el1.stop().animate({ "left": "+=50px" }, "slow" )
       el1.css({'visibility': 'visible'}); 
     }
   });
