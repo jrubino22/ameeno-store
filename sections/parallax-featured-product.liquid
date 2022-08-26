@@ -27,24 +27,6 @@
   </div>
 </div>
 
-<script>
-  $(document).ready(function(e){
-    var divWidth = $('.stretch1').width();
-    $('.stretch1').css({'position' : 'absolute', 'left': -divWidth})
-    console.log(divWidth)
-  });
-
-  $(window).scroll(function(e){ 
-    var el1 = $('.stretch1'); 
-    var viewportHeight = $("body").innerHeight()
-    var halfDivHeight = el1.height() / 2;
-    var fromTop = el1.offset().top - viewportHeight + halfDivHeight;
-    var bottomLimit = fromTop + divHeight - viewportHeight;
-    if ($(this).scrollTop() > fromTop){ 
-      el1.stop().animate({ "left": "+=50px" }, "slow" )
-    }
-  });
-</script>
   
 {% schema %} 
 { 
