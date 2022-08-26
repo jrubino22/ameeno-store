@@ -25,7 +25,7 @@
     $(window).scroll(function(e){ 
   var $el = $('.fixedElement'); 
   var fromTop = $('.leftDiv').offset().top;
-  var divHeight = $('.leftDiv').clientHeight
+  var divHeight = $('.leftDiv').height
   var lowerFromTop
   var isPositionFixed = ($el.css('position') == 'fixed');
   if ($(this).scrollTop() > fromTop && !isPositionFixed){ 
