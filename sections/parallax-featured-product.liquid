@@ -14,7 +14,7 @@
     </video>
   </figure>
 </div>
-  <div class="stretch1">
+  <div class="stretch1" style="visibility: hidden">
     <div class="codecontainer">
       <h2>{{ section.settings.section_title }}</h2>
       <p>{{ section.settings.section_text }}</p>
@@ -26,6 +26,21 @@
     <p>{{ section.settings.section_text2 }}</p>
   </div>
 </div>
+
+<script>
+  $(window).scroll(function(e){ 
+    var el1 = $('.stretch1'); 
+    var viewportHeight = $("body"). innerHeight()
+    var fromTop = el1.offset().top; - viewportHeight
+    var divHeight = $('.fc2Div').height();
+    var bottomLimit = fromTop + divHeight - viewportHeight;
+    var isPositionFixed = ($el.css('position') == 'fixed');
+    if ($(this).scrollTop() > fromTop){ 
+      $el.fadeIn('slow');
+      $el.css({'visibility': 'visible'}); 
+    }
+  });
+</script>
   
 {% schema %} 
 { 
