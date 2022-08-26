@@ -28,6 +28,11 @@
 </div>
 
 <script>
+  $(window).load(function(){
+    var divWidth = $('.stretch1').width;
+    $('.stretch1').css({'position' : 'absolute', 'left': -divWidth})
+  });
+
   $(window).scroll(function(e){ 
     var el1 = $('.stretch1'); 
     var viewportHeight = $("body").innerHeight()
