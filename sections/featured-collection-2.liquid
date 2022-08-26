@@ -32,11 +32,20 @@
   if ($(this).scrollTop() > fromTop && !isPositionFixed){ 
     console.log(fromTop)
     console.log(bottomLimit)
-    $el.fadeIn();
+    $el.fadeIn('slow');
     $el.css({'position': 'fixed', 'top': '50%', 'left': '15%', 'max-width': '20%', 'display':'block'}); 
   }
   if ($(this).scrollTop() < fromTop && isPositionFixed){
+    $el.fadeOut();
     $el.css({'position': 'static', 'top': '50%', 'max-width': '20%', 'margin-left': '4%', 'display': 'none'}); 
+  } 
+  if ($(this).scrollTop() > bottomLimit && isPositionFixed){ 
+    $el.fadeOut();
+    $el.css({'position': 'fixed', 'top': '50%', 'left': '15%', 'max-width': '20%', 'display':'none'}); 
+  }
+  if ($(this).scrollTop() < fromTop && !isPositionFixed){
+    $el.fadeIn('slow');
+    $el.css({'position': 'fixed', 'top': '50%', 'max-width': '20%', 'margin-left': '4%', 'display': 'block'}); 
   } 
 });
 </script>
