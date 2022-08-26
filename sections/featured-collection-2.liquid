@@ -25,8 +25,11 @@
     $(window).scroll(function(e){ 
   var $el = $('.fixedElement'); 
   var fromTop = $('.leftDiv').offset().top;
+  var divHeight = $('.leftDiv').clientHeight
+  var lowerFromTop
   var isPositionFixed = ($el.css('position') == 'fixed');
   if ($(this).scrollTop() > fromTop && !isPositionFixed){ 
+    console.log(divHeight)
     $el.fadeIn();
     $el.css({'position': 'fixed', 'top': '50%', 'left': '15%', 'max-width': '20%', 'display':'block'}); 
   }
