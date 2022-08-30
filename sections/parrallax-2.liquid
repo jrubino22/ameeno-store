@@ -6,13 +6,13 @@
       </video>
     </figure>
   </div>
-  <div class="center-content-parrallax" >
+  <div class="center-content-parallax" >
       <div class="text-container" style="float: left">
         <h2>{{ section.settings.section_title }}</h2>
         <p>{{ section.settings.section_text }}</p>
     </div>
     <div class="center-image-container" style="float: right">
-        <img src="{{ block.settings.image | image_url: width: 20% }}">
+        <img src="{{ section.settings.image | image_url: width: 20% }}">
     </div>
   </div>
   <script>
@@ -26,11 +26,11 @@
     
   {% schema %} 
   { 
-    "name": "Background Video Parallax 2", 
+    "name": "Bottom Parallax", 
     "settings": [ 
       { 
         "type": "header", 
-        "content": "Background Video Parallax 2" 
+        "content": "Bottom Parallax" 
       }, 
       { 
         "type": "text", 
@@ -55,7 +55,7 @@
     ], 
     "presets": [ 
       { 
-        "name": "Video Parallax 2", 
+        "name": "Bottom Parallax", 
         "category": "video" 
       } 
     ] 
