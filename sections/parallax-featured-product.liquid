@@ -37,9 +37,9 @@
   jQuery(window).scroll(function () {
     const topLimit = jQuery(".stretch3").offset().top - jQuery(window).height()
     const bottomLimit = jQuery(".stretch3").offset().top + jQuery(".stretch3").height() 
-    if (jQuery(this).scrollTop() >= jQuery(".stretch3").offset().top - jQuery(window).height() && jQuery(this).scrollTop() <= jQuery(".stretch3").offset().top + jQuery(".stretch3").height() + jQuery(window).height()) {
+    if (jQuery(this).scrollTop() > jQuery(".stretch3").offset().top - jQuery(window).height() && jQuery(this).scrollTop() < jQuery(".stretch3").offset().top + jQuery(".stretch3").height() + jQuery(window).height()) {
+      console.log(topLimit, bottomLimit)
         if (jQuery('.stretch3').hasClass('visible') == false) {
-          console.log(topLimit, bottomLimit)
             jQuery('.stretch3').stop().animate({
                 left: '0px'
             }, 2000, function () {
@@ -58,7 +58,10 @@
 });
 
 jQuery(window).scroll(function () {
-if (jQuery(this).scrollTop() >= jQuery(".stretch2").offset().top - jQuery(window).height() && jQuery(this).scrollTop() <= jQuery(".stretch2").offset().top + jQuery(".stretch2").height() + jQuery(window).height()) {
+  const topLimit2 =  jQuery(".stretch2").offset().top - jQuery(window).height() 
+  const bottomLimit2 = jQuery(".stretch2").offset().top + jQuery(".stretch2").height() + jQuery(window).height()
+if (jQuery(this).scrollTop() > jQuery(".stretch2").offset().top - jQuery(window).height() && jQuery(this).scrollTop() < jQuery(".stretch2").offset().top + jQuery(".stretch2").height() + jQuery(window).height()) {
+   console.log("2", topLimit2, bottomLimit2)
         if (jQuery('.stretch2').hasClass('visible') == false) {
             jQuery('.stretch2').stop().animate({
                 right: '0px'
