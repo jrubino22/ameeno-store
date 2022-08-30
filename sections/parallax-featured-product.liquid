@@ -46,10 +46,10 @@
     } else {
         if (jQuery('.stretch3').hasClass('visible') == true) {
             jQuery('.stretch3').animate({
-                left: -($('.stretch3').width()) + "px"
+                left: -($('.stretch3').width()) +
             }, 1500, function () {
                 jQuery('.stretch3').removeClass('visible')
-                console.log(-($('.stretch3').width()))
+                console.log($(".stretch3").offset().top + $(".stretch3").height() + $(window).height())
             });
         }
     }
@@ -67,7 +67,7 @@ if (jQuery(this).scrollTop() + $(window).height() >= $(".stretch2").offset().top
     } else {
         if (jQuery('.stretch2').hasClass('visible') == true) {
             jQuery('.stretch2').animate({
-                right: -($('.stretch2').width()) + "px"
+                right: -($('.stretch2').width())
             }, 500, function () {
                 jQuery('.stretch2').removeClass('visible')
             });
