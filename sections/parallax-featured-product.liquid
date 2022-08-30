@@ -35,7 +35,7 @@
   // })
 
   jQuery(window).scroll(function () {
-    if (jQuery(this).scrollTop() + $(window).height() >= $(".stretch3").offset().top && jQuery(this).scrollTop() <= $(".stretch3").offset().top + $(".stretch3").height() + $(window).height()) {
+    if (jQuery(this).scrollTop() + jQuery(window).height() >= jQuery(".stretch3").offset().top && jQuery(this).scrollTop() <= jQuery(".stretch3").offset().top + jQuery(".stretch3").height() + jQuery(window).height()) {
         if (jQuery('.stretch3').hasClass('visible') == false) {
             jQuery('.stretch3').animate({
                 left: '0px'
@@ -46,7 +46,7 @@
     } else {
         if (jQuery('.stretch3').hasClass('visible') == true) {
             jQuery('.stretch3').animate({
-                left: -($('.stretch3').width())
+                left: -(jQuery('.stretch3').outerWidth())
             }, 1500, function () {
                 jQuery('.stretch3').removeClass('visible')
                 console.log($(".stretch3").offset().top + $(".stretch3").height() + $(window).height())
@@ -56,7 +56,7 @@
 });
 
 jQuery(window).scroll(function () {
-if (jQuery(this).scrollTop() + $(window).height() >= $(".stretch2").offset().top && jQuery(this).scrollTop() <= $(".stretch2").offset().top + $(".stretch2").height() + $(window).height()) {
+if (jQuery(this).scrollTop() + jQuery(window).height() >= jQuery(".stretch2").offset().top && jQuery(this).scrollTop() <= jQuery(".stretch2").offset().top + jQuery(".stretch2").height() + jQuery(window).height()) {
         if (jQuery('.stretch2').hasClass('visible') == false) {
             jQuery('.stretch2').animate({
                 right: '0px'
@@ -67,7 +67,7 @@ if (jQuery(this).scrollTop() + $(window).height() >= $(".stretch2").offset().top
     } else {
         if (jQuery('.stretch2').hasClass('visible') == true) {
             jQuery('.stretch2').animate({
-                right: -($('.stretch2').width())
+                right: -(jQuery('.stretch2').outerWidth())
             }, 500, function () {
                 jQuery('.stretch2').removeClass('visible')
             });
