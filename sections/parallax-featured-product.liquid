@@ -28,11 +28,32 @@
 </div>
 
 <script>
-  $(window).on("scroll", function(){
-  if($(window).scrollTop() + $(window).height() - 100 >= $(".stretch3").offset().top){
-    alert("On viewport");
-  }
-  })
+  // $(window).on("scroll", function(){
+  // if($(window).scrollTop() + $(window).height() - 100 >= $(".stretch3").offset().top){
+  //   alert("On viewport");
+  // }
+  // })
+
+  jQuery(window).scroll(function () {
+    if (jQuery(this).scrollTop() + $(window).height() - 100 >= $(".stretch3").offset().top) {
+        if (jQuery('.stretch3').hasClass('visible') == false) {
+            jQuery('.stretch3').stop().animate({
+                right: '0px'
+            }, function () {
+                jQuery('.stretch3').addClass('visible')
+            });
+        }
+    } else {
+        if (jQuery('.stretch3').hasClass('visible') == true) {
+            jQuery('.stretch3').stop().animate({
+                right: '-300px'
+            }, function () {
+                jQuery('.stretch3').removeClass('visible')
+            });
+        }
+    }
+});
+
 </script>
   
 {% schema %} 
