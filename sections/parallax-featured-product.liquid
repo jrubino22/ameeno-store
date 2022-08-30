@@ -47,7 +47,7 @@
     } else {
         if (jQuery('.stretch3').hasClass('visible') == true) {
             jQuery('.stretch3').stop().animate({
-                left: -($('.stretch3').width())
+                left: -($('.stretch3').width()) + "px"
             }, 1000, function () {
                 jQuery('.stretch3').removeClass('visible')
                 console.log(-($('.stretch3').width()))
@@ -69,7 +69,7 @@ if (jQuery(this).scrollTop() + $(window).height() >= $(".stretch2").offset().top
     } else {
         if (jQuery('.stretch2').hasClass('visible') == true) {
             jQuery('.stretch2').stop().animate({
-                right: -($('.stretch2').width())
+                right: -($('.stretch2').width()) + "px"
             }, 500, function () {
                 jQuery('.stretch2').removeClass('visible')
             });
