@@ -14,7 +14,7 @@
     </video>
   </figure>
 </div>
-  <div class="stretch1" >
+  <div class="stretch3" >
     <div class="codecontainer">
       <h2>{{ section.settings.section_title }}</h2>
       <p>{{ section.settings.section_text }}</p>
@@ -27,6 +27,13 @@
   </div>
 </div>
 
+<script>
+  $(window).on("scroll", function(){
+  if($(window).scrollTop() + $(window).height() - 100 >= $(".stretch3").offset().top){
+    alert("On viewport");
+  }
+  })
+</script>
   
 {% schema %} 
 { 
