@@ -3014,3 +3014,7 @@ html, body {
   appearance: none;
   background-color: rgba(255,255,255,0)
 }
+
+.center-content-parrallax{
+  margin: 10% 20%;
+}

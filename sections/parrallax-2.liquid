@@ -1,0 +1,63 @@
+
+<div class="video-wrapper">
+    <figure>
+      <video loop muted="muted" autoplay>
+        <source src="{{ section.settings.img_product }}"/>
+      </video>
+    </figure>
+  </div>
+  <div class="center-content-parrallax" >
+      <div class="text-container" style="float: left">
+        <h2>{{ section.settings.section_title }}</h2>
+        <p>{{ section.settings.section_text }}</p>
+    </div>
+    <div class="center-image-container" style="float: right">
+        <img src="{{ block.settings.image | image_url: width: 20% }}">
+    </div>
+  </div>
+  <script>
+
+  
+    jQuery(window).scroll(function () {
+
+  });
+  
+  </script>
+    
+  {% schema %} 
+  { 
+    "name": "Background Video Parallax 2", 
+    "settings": [ 
+      { 
+        "type": "header", 
+        "content": "Background Video Parallax" 
+      }, 
+      { 
+        "type": "text", 
+        "id": "img_product", 
+        "label": "Section image" 
+      },
+      { 
+        "type": "text", 
+        "id": "section_title", 
+        "label": "Section title 1" 
+      },
+      { 
+        "type": "richtext", 
+        "id": "section_text", 
+        "label": "Section content 1" 
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "center image"
+      },
+    ], 
+    "presets": [ 
+      { 
+        "name": "Video Parallax 2", 
+        "category": "video" 
+      } 
+    ] 
+  } 
+  {% endschema %} 
