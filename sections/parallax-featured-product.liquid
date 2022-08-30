@@ -35,20 +35,40 @@
   // })
 
   jQuery(window).scroll(function () {
-    if (jQuery(this).scrollTop() + $(window).height() - 100 >= $(".stretch3").offset().top) {
+    if (jQuery(this).scrollTop() + $(window).height() >= $(".stretch3").offset().top) {
         if (jQuery('.stretch3').hasClass('visible') == false) {
             jQuery('.stretch3').stop().animate({
                 left: '0px'
-            }, function () {
+            }, 1000, function () {
                 jQuery('.stretch3').addClass('visible')
             });
         }
     } else {
         if (jQuery('.stretch3').hasClass('visible') == true) {
             jQuery('.stretch3').stop().animate({
-                left: '-300px'
+                left: $('.stretch3').width()
             }, function () {
                 jQuery('.stretch3').removeClass('visible')
+            });
+        }
+    }
+});
+
+jQuery(window).scroll(function () {
+if (jQuery(this).scrollTop() + $(window).height() >= $(".stretch2").offset().top) {
+        if (jQuery('.stretch2').hasClass('visible') == false) {
+            jQuery('.stretch2').stop().animate({
+                right: '0px'
+            }, 1000, function () {
+                jQuery('.stretch2').addClass('visible')
+            });
+        }
+    } else {
+        if (jQuery('.stretch2').hasClass('visible') == true) {
+            jQuery('.stretch2').stop().animate({
+                right: $('.stretch2').width()
+            }, function () {
+                jQuery('.stretch2').removeClass('visible')
             });
         }
     }
