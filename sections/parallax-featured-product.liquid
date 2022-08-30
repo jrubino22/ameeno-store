@@ -37,7 +37,7 @@
   jQuery(window).scroll(function () {
     const topLimit = jQuery(".stretch3").offset().top - jQuery(window).height()
     const bottomLimit = jQuery(".stretch3").offset().top + jQuery(".stretch3").height() + jQuery(window).height()
-    if (jQuery(this).scrollTop() + jQuery(window).height() >= jQuery(".stretch3").offset().top && jQuery(this).scrollTop() <= jQuery(".stretch3").offset().top + jQuery(".stretch3").height() + jQuery(window).height()) {
+    if (jQuery(this).scrollTop() >= jQuery(".stretch3").offset().top - jQuery(window).height() && jQuery(this).scrollTop() <= jQuery(".stretch3").offset().top + jQuery(".stretch3").height()) {
         if (jQuery('.stretch3').hasClass('visible') == false) {
           console.log(topLimit, bottomLimit)
             jQuery('.stretch3').stop().animate({
