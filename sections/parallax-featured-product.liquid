@@ -56,7 +56,7 @@
 });
 
 jQuery(window).scroll(function () {
-if (jQuery(this).scrollTop() + $(window).height() >= $(".stretch2").offset().top && jQuery(this).scrollTop() <= $(".stretch3").offset().top + $(".stretch3").height() + $(window).height()) {
+if (jQuery(this).scrollTop() + $(window).height() >= $(".stretch2").offset().top && jQuery(this).scrollTop() <= $(".stretch2").offset().top + $(".stretch2").height() + $(window).height()) {
         if (jQuery('.stretch2').hasClass('visible') == false) {
             jQuery('.stretch2').animate({
                 right: '0px'
