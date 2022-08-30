@@ -3005,7 +3005,7 @@ html, body {
   width: 100%;
   align-items: center;
   border: 1px solid rgb(var(--color-foreground));
-  padding: 4rem 3rem;
+  padding: 2rem 0;
   cursor: pointer;
   font: inherit;
   font-size: 1.5rem;
