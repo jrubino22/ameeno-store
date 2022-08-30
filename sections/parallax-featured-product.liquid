@@ -37,6 +37,7 @@
   jQuery(window).scroll(function () {
     if (jQuery(this).scrollTop() + $(window).height() >= $(".stretch3").offset().top && jQuery(this).scrollTop() <= $(".stretch3").offset().top + $(".stretch3").height() + $(window).height()) {
         if (jQuery('.stretch3').hasClass('visible') == false) {
+            jQuery('.stretch3').fadeIn()
             jQuery('.stretch3').stop().animate({
                 left: '0px'
             }, 1000, function () {
@@ -46,9 +47,10 @@
     } else {
         if (jQuery('.stretch3').hasClass('visible') == true) {
             jQuery('.stretch3').stop().animate({
-                left: -$('.stretch3').width()
+                left: -($('.stretch3').width())
             }, 1000, function () {
                 jQuery('.stretch3').removeClass('visible')
+                console.log(-($('.stretch3').width()))
             });
         }
     }
@@ -57,17 +59,18 @@
 jQuery(window).scroll(function () {
 if (jQuery(this).scrollTop() + $(window).height() >= $(".stretch2").offset().top && jQuery(this).scrollTop() <= $(".stretch3").offset().top + $(".stretch3").height() + $(window).height()) {
         if (jQuery('.stretch2').hasClass('visible') == false) {
+            jQuery('.stretch2').fadeIn()
             jQuery('.stretch2').stop().animate({
                 right: '0px'
-            }, 1000, function () {
+            }, 500, function () {
                 jQuery('.stretch2').addClass('visible')
             });
         }
     } else {
         if (jQuery('.stretch2').hasClass('visible') == true) {
             jQuery('.stretch2').stop().animate({
-                right: -$('.stretch2').width()
-            }, 1000, function () {
+                right: -($('.stretch2').width())
+            }, 500, function () {
                 jQuery('.stretch2').removeClass('visible')
             });
         }
