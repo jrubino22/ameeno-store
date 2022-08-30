@@ -73,6 +73,9 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "Bottom Parallax": {
+      "type": "parallax-2"
+    },
     "featured-collection-0": {
       "type": "featured-collection",
       "settings": {
