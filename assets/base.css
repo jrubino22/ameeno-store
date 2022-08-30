@@ -2978,7 +2978,9 @@ html, body {
   left:-80%;
   width:80%;
   height: auto;
-  font-size:1rem;
-  color:white;
+  font-size: 2rem;
   background:rgba(255, 255, 255, 0.5);
+  margin-top: 20rem;
+  margin-bottom:20rem;
+  padding: 5%
 }
