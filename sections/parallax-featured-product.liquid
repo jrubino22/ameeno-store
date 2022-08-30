@@ -47,7 +47,7 @@
         if (jQuery('.stretch3').hasClass('visible') == true) {
             jQuery('.stretch3').animate({
                 left: -($('.stretch3').width()) + "px"
-            }, 1000, function () {
+            }, 1500, function () {
                 jQuery('.stretch3').removeClass('visible')
                 console.log(-($('.stretch3').width()))
             });
@@ -60,7 +60,7 @@ if (jQuery(this).scrollTop() + $(window).height() >= $(".stretch2").offset().top
         if (jQuery('.stretch2').hasClass('visible') == false) {
             jQuery('.stretch2').animate({
                 right: '0px'
-            }, 500, function () {
+            }, 1500, function () {
                 jQuery('.stretch2').addClass('visible')
             });
         }
