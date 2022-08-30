@@ -48,7 +48,7 @@
         }
     } else {
         if (jQuery('.stretch3').hasClass('visible') == true) {
-            jQuery('.stretch3').animate({
+            jQuery('.stretch3').stop().animate({
                 left: -(jQuery('.stretch3').outerWidth())
             }, function () {
                 jQuery('.stretch3').removeClass('visible')
@@ -71,7 +71,7 @@ if (jQuery(this).scrollTop() > jQuery(".stretch2").offset().top - jQuery(window)
         }
     } else {
         if (jQuery('.stretch2').hasClass('visible') == true) {
-            jQuery('.stretch2').animate({
+            jQuery('.stretch2').stop().animate({
                 right: -(jQuery('.stretch2').outerWidth())
             }, function () {
                 jQuery('.stretch2').removeClass('visible')
