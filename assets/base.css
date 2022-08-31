@@ -3015,9 +3015,7 @@ html, body {
   background-color: rgba(255,255,255,0)
 }
 
-.center-content-parallax{
-  margin: 10% 20%;
-}
+
 
 .bottom-video {
   
@@ -3027,5 +3025,6 @@ html, body {
 
 .center-content-parallax {
   z-index: 5;
-  max-width: 50%
+  max-width: 50%;
+  background-color: blue;
 }
