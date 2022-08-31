@@ -2922,6 +2922,7 @@ html, body {
   position: fixed;
   top: 0;
   right: 0;
+  bottom: 50%;
   max-width: 100%;
   min-height: 100%;
   min-width: 100%;
@@ -3017,6 +3018,7 @@ html, body {
 
 .bottom-video {
   position: fixed;
+  top: 50%;
   bottom: 0;
   right: 0;
   height: auto;

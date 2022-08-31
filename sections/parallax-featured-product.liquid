@@ -6,7 +6,7 @@
     </video>
 </div>  -->
 <!-- /featured --> 
-
+<div class="jsDiv">
 <div class="video-wrapper">
   <figure>
     <video loop muted="muted" autoplay>
@@ -26,12 +26,23 @@
     <p>{{ section.settings.section_text2 }}</p>
   </div>
 </div>
+</div>
 
 <script>
   // $(window).on("scroll", function(){
   // if($(window).scrollTop() + $(window).height() - 100 >= $(".stretch3").offset().top){
   //   alert("On viewport");
   // }
+  // })
+
+  
+
+  // $(window).ready(function(){
+
+  // const wheresDiv = $('.video-wrapper').offset.top;
+
+  // $('.video-wrapper').css('top', wheresDiv)
+
   // })
 
   jQuery(window).scroll(function () {
