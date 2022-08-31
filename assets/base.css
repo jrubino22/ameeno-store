@@ -2974,7 +2974,7 @@ html, body {
   width:80%;
   height: auto;
   font-size: 2rem;
-  background:rgba(255, 255, 255, 0.5);
+  background:rgba(255, 255, 255, 0.7);
   margin-top: 20rem;
   margin-bottom:20rem;
   padding: 5%;
@@ -2992,7 +2992,7 @@ html, body {
   margin-top: 20rem;
   margin-bottom:20rem;
   padding: 5%;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.7);
   overflow-x: clip
 }
  body{
@@ -3031,6 +3031,7 @@ z-index: 0;
 
 /* Just styling the content of the div, the *magic* in the previous rules */
 .video-container-bottom .caption {
+margin: 20% 0;
 z-index: 1;
 position: relative;
 text-align: center;
