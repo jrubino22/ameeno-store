@@ -3018,3 +3018,14 @@ html, body {
 .center-content-parallax{
   margin: 10% 20%;
 }
+
+.bottom-video {
+  
+  z-index: 2;
+
+}
+
+.center-content-parallax {
+  z-index: 5;
+  max-width: 50%
+}
