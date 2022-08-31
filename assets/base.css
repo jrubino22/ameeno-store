@@ -2930,6 +2930,7 @@ html, body {
 .video-wrapper figure {
   margin: 0;
   position: relative;
+  top: 0;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
