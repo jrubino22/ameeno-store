@@ -2918,6 +2918,13 @@ html, body {
   box-sizing: border-box !important;
  }
 
+.s2 {
+  background-position: 50%;
+  background-size: cover;
+  position: relative;
+  width: 100%
+}
+
 .video-wrapper {
   position: fixed;
   top: 0;
@@ -3018,6 +3025,7 @@ html, body {
 
 .bottom-video {
   position: fixed;
+  padding: 55% 0 0 0;
   bottom:0;
   right: 0;
   height: auto;
