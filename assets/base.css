@@ -3018,13 +3018,13 @@ html, body {
 
 
 .bottom-video {
-  position: fixed
+  position: fixed;
   z-index: 2;
 
 }
 
 .center-content-parallax {
-  position: absolute
+  position: absolute;
   z-index: 5;
   max-width: 50%;
   background-color: yellow;
