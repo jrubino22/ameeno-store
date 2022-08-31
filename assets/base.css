@@ -3024,7 +3024,9 @@ html, body {
 }
 
 .center-content-parallax {
-  position: absolute;
+  position: relative;
+  bottom: 20%;
+  top: 20%;
   z-index: 5;
   max-width: 50%;
   background-color: yellow;
