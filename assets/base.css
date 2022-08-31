@@ -2918,44 +2918,34 @@ html, body {
   box-sizing: border-box !important;
  }
 
-.s2 {
-  background-position: 50%;
-  background-size: cover;
-  position: relative;
-  width: 100%
-}
-
 .video-wrapper {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100%;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  max-width: 100%;
+  min-height: 80%;
   min-width: 100%;
-  z-index: -8000;
-
+  z-index: -9000;
+  overflow-y: hidden;
 }
-.video-wrapper .videop {
+.video-wrapper figure {
   margin: 0;
   position: relative;
-  top: 0;
-  height: 100vh !important;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-
-.videoz {
-  position: relative;
-  padding: 177% 0 0 0;
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.video-wrapper video {
-  max-width: 100%;
+.video-wrapper figure h1 {
   position: absolute;
-  height: 56.25 vw !important;
-  background-size: cover
+  top: 20px;
+  left: 20px;
+  border-right: 3px solid #fff;
+  padding: 5px 10px 5px 5px;
+}
+.video-wrapper video {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover
 }
 
 
@@ -2984,7 +2974,7 @@ html, body {
   width:80%;
   height: auto;
   font-size: 2rem;
-  background:rgba(255, 255, 255, 0.7);
+  background:rgba(255, 255, 255, 0.5);
   margin-top: 20rem;
   margin-bottom:20rem;
   padding: 5%;
@@ -3002,7 +2992,7 @@ html, body {
   margin-top: 20rem;
   margin-bottom:20rem;
   padding: 5%;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.5);
   overflow-x: clip
 }
  body{
@@ -3025,34 +3015,25 @@ html, body {
   background-color: rgba(255,255,255,0)
 }
 
-
-
-.bottom-video {
-  position: fixed;
-  padding: 55% 0 0 0;
-  bottom:0;
-  right: 0;
-  height: auto;
-  max-width: 100%;
-  min-height: 100%;
-  min-width: 100%;
-  z-index: -9000;
-}
-.bottom-video figure {
-  margin: 0;
+.video-container-bottom {
+  height: 300px;
+  width: 300px;
   position: relative;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
-.bottom-video video {
-  max-width: 100%;
-  background-size: cover
+
+.video-container-bottom video {
+width: 100%;
+height: 100%;
+position: absolute;
+object-fit: cover;
+z-index: 0;
 }
-.center-content-parallax {
-  position: relative;
-  bottom: 20%;
-  top: 20%;
-  z-index: 5;
-  max-width: 50%;
-  background-color: yellow;
+
+/* Just styling the content of the div, the *magic* in the previous rules */
+.video-container-bottom .caption {
+z-index: 1;
+position: relative;
+text-align: center;
+color: #dc0000;
+padding: 10px;
 }

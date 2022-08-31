@@ -1,13 +1,11 @@
 
 
 <div class="video-wrapper">
-  <div class="videop">
-    <div class="videoz">
+  <figure>
     <video loop muted="muted" autoplay>
-      <source src="{{ section.settings.img_product }}"/>
+      <source src="{{ section.settings.img_product }}" type="video/mp4"/>
     </video>
-  </div>
-  </div>
+  </figure>
 </div>
   <div class="stretch3" >
     <div class="codecontainer">
@@ -22,23 +20,12 @@
   </div>
 </div>
 
-
 <script>
   // $(window).on("scroll", function(){
   // if($(window).scrollTop() + $(window).height() - 100 >= $(".stretch3").offset().top){
   //   alert("On viewport");
   // }
   // })
-
-
-
-  $(window).ready(function(){
-
-  const wheresDiv = $('.video-wrapper').offset.top;
-
-  $('.video-wrapper').css('padding-top', wheresDiv)
-
-  })
 
   jQuery(window).scroll(function () {
     const topLimit3 = jQuery(".stretch3").offset().top - jQuery(window).height()
