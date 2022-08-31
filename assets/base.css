@@ -2929,16 +2929,17 @@ html, body {
   position: fixed;
   top: 0;
   right: 0;
-  max-width: 100%;
+  width: 100%;
   min-height: 100%;
   min-width: 100%;
-  z-index: -9000;
+  z-index: -8000;
 
 }
-.video-wrapper figure {
+.video-wrapper .videop {
   margin: 0;
   position: relative;
   top: 0;
+  height: 100vh !important;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
