@@ -2920,7 +2920,7 @@ html, body {
 
 .video-wrapper {
   position: fixed;
-  bottom: 0;
+  top: 0;
   right: 0;
   height: auto;
   max-width: 100%;
@@ -3029,7 +3029,7 @@ html, body {
 }
 .bottom-video figure {
   margin: 0;
-  position: relative;
+  position: absolute;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
