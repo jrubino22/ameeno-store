@@ -2922,7 +2922,6 @@ html, body {
   position: fixed;
   top: 0;
   right: 0;
-  height: auto;
   max-width: 100%;
   min-height: 100%;
   min-width: 100%;
@@ -2943,9 +2942,8 @@ html, body {
   padding: 5px 10px 5px 5px;
 }
 .video-wrapper video {
-  width: 100%;
   max-width: 100%;
-  object-fit: cover
+  background-size: cover
 }
 
 
@@ -3034,9 +3032,8 @@ html, body {
   margin-inline-end: 0px;
 }
 .bottom-video video {
-  width: 100%;
   max-width: 100%;
-  object-fit: cover
+  background-size: cover
 }
 
 .center-content-parallax {
