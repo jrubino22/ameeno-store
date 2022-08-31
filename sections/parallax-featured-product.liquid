@@ -35,15 +35,15 @@
   // }
   // })
 
-  
 
-  // $(window).ready(function(){
 
-  // const wheresDiv = $('.video-wrapper').offset.top;
+  $(window).ready(function(){
 
-  // $('.video-wrapper').css('top', wheresDiv)
+  const wheresDiv = $('.video-wrapper').offset.top;
 
-  // })
+  $('.video-wrapper').css('top', wheresDiv)
+
+  })
 
   jQuery(window).scroll(function () {
     const topLimit3 = jQuery(".stretch3").offset().top - jQuery(window).height()
