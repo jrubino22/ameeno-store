@@ -2925,7 +2925,7 @@ html, body {
   max-width: 100%;
   min-height: 100%;
   min-width: 100%;
-  z-index: 9000;
+  z-index: -9000;
 
 }
 .video-wrapper figure {
@@ -3023,11 +3023,11 @@ html, body {
   max-width: 100%;
   min-height: 100%;
   min-width: 100%;
-  z-index: 9000;
+  z-index: -9000;
 }
 .bottom-video figure {
   margin: 0;
-  position: absolute;
+  position: relative;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
