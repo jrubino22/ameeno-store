@@ -2924,10 +2924,10 @@ html, body {
   right: 0;
   height: auto;
   max-width: 100%;
-  min-height: 80%;
+  min-height: 100%;
   min-width: 100%;
   z-index: -9000;
-  overflow-y: hidden;
+
 }
 .video-wrapper figure {
   margin: 0;
@@ -3019,8 +3019,24 @@ html, body {
 
 .bottom-video {
   position: fixed;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  max-width: 100%;
+  min-height: 100%;
+  min-width: 100%;
   z-index: -9000;
-
+}
+.bottom-video figure {
+  margin: 0;
+  position: relative;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.bottom-video video {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover
 }
 
 .center-content-parallax {
