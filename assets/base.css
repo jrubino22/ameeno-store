@@ -2953,6 +2953,8 @@ html, body {
 
 .video-wrapper video {
   max-width: 100%;
+  position: absolute;
+  height: 56.25 vw !important;
   background-size: cover
 }
 
