@@ -12,7 +12,7 @@
         <p>{{ section.settings.section_text }}</p>
     </div>
     <div class="center-image-container" style="float: right">
-        <img src="{{ section.settings.image | image_url: width: 20% }}">
+        <img src="{{ section.settings.image | image_url: width: 20 }}">
     </div>
   </div>
   <script>
@@ -51,7 +51,7 @@
         "type": "image_picker",
         "id": "image",
         "label": "center image"
-      },
+      }
     ], 
     "presets": [ 
       { 
