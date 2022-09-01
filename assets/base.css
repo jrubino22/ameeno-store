@@ -3024,7 +3024,7 @@ html, body {
 .video-container-bottom video {
 min-width: 100%;
 min-height: 40%;
-position: static;
+position: absolute;
 object-fit: cover;
 z-index: 0;
 }
