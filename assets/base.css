@@ -3017,7 +3017,6 @@ details-disclosure > details {
 
 .video-container-bottom {
   position: absolute;
-  padding: 20% 0;
   overflow: hidden;
 }
 
@@ -3025,6 +3024,7 @@ details-disclosure > details {
 position: fixed;
 top: 0;
 left: 0;
+padding: 20% 0;
 min-width: 100%;
 min-height: 100%;
 z-index: 0;
