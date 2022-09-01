@@ -1,24 +1,25 @@
 
-
-<div class="video-wrapper">
-  <figure>
-    <video loop muted="muted" autoplay>
-      <source src="{{ section.settings.img_product }}" type="video/mp4"/>
-    </video>
-  </figure>
-</div>
-  <div class="stretch3" >
-    <div class="codecontainer">
-      <h2>{{ section.settings.section_title }}</h2>
-      <p>{{ section.settings.section_text }}</p>
-    </div>
-</div>
-<div class="stretch2">
-  <div class="codecontainer">
-    <h2>{{ section.settings.section_title2 }}</h2>
-    <p>{{ section.settings.section_text2 }}</p>
+<section>
+  <div class="video-wrapper">
+    <figure>
+      <video loop muted="muted" autoplay>
+        <source src="{{ section.settings.img_product }}" type="video/mp4"/>
+      </video>
+    </figure>
   </div>
-</div>
+    <div class="stretch3" >
+      <div class="codecontainer">
+        <h2>{{ section.settings.section_title }}</h2>
+        <p>{{ section.settings.section_text }}</p>
+      </div>
+  </div>
+  <div class="stretch2">
+    <div class="codecontainer">
+      <h2>{{ section.settings.section_title2 }}</h2>
+      <p>{{ section.settings.section_text2 }}</p>
+    </div>
+  </div>
+</section>
 
 <script>
   // $(window).on("scroll", function(){
