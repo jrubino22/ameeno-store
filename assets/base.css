@@ -3024,13 +3024,13 @@ html, body {
 .video-container-bottom video {
 min-width: 100%;
 min-height: 40%;
-position: relative;
+position: absolute;
 object-fit: fill;
-z-index: 0;
+z-index: -1;
 }
 
 .video-container-bottom .caption {
-z-index: 1;
+z-index: 0;
 position: relative;
 top: 45%;
 text-align: center;
