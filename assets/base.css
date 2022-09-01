@@ -3030,7 +3030,7 @@ html, body {
 min-width: 100%;
 min-height: 40%;
 position: absolute;
-object-fit: none;
+object-fit: contain;
 z-index: 0;
 }
 
