@@ -3031,7 +3031,7 @@ z-index: 0;
 } */
 
 .video-container-bottom .caption {
-z-index: 1;
+z-index: 5;
 position: relative;
 top: 45%;
 text-align: center;
