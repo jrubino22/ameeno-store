@@ -1,4 +1,4 @@
-<div class="video-wrapper-bottom">
+<section>
   <div class="video-container-bottom">
     <video autoplay muted loop>
         <source src="{{ section.settings.img_product_2 }}" type="video/mp4" />
@@ -8,29 +8,12 @@
       <div class="bp-text" >
         <h2>{{ section.settings.section_title_2 }}</h2>
         <p>{{ section.settings.section_text_2 }}</p>
-    </div>
-    <div class="center-image-container">
-        <img src="{{ section.settings.image_2 | image_url: width: 200 }}">
-    </div>
-  </div>
-</div>
-<!-- 
-<div class="videoz">
-  <video loop muted="muted" autoplay>
-      <source src="{{ section.settings.img_product }}"/>
-      </video>
       </div>
-    </div>  
+      <div class="center-image-container">
+          <img src="{{ section.settings.image_2 | image_url: width: 200 }}">
+      </div>
   </div>
-  <div class="center-content-parallax" >
-      <div class="bp-text" >
-        <h2>{{ section.settings.section_title }}</h2>
-        <p>{{ section.settings.section_text }}</p>
-    </div>
-    <div class="center-image-container">
-        <img src="{{ section.settings.image | image_url: width: 200 }}">
-    </div>
-  </div> -->
+</section>
 
   <script>
 
