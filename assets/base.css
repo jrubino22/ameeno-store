@@ -3016,16 +3016,16 @@ html, body {
 }
 
 .video-container-bottom {
-  min-height: 100%;
-  min-width: 100%;
   position: absolute;
   overflow: hidden;
 }
 
 .video-container-bottom video {
+position: absolute;
+top: 0;
+left: 0;
 min-width: 100%;
 min-height: 100%;
-position: absolute;
 z-index: 0;
 }
 
