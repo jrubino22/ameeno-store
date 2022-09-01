@@ -2911,12 +2911,11 @@ details-disclosure > details {
 }
 
 /* Parallax Video Style  */
-
-/* html, body {
+html, body {
   width: 100%;
   height: 100%;
   box-sizing: border-box !important;
- } */
+ }
 
 .video-wrapper {
   position: fixed;
