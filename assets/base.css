@@ -3017,6 +3017,7 @@ details-disclosure > details {
 
 .video-container-bottom {
   position: absolute;
+  padding: 20% 0;
   overflow: hidden;
 }
 
