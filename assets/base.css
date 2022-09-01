@@ -3016,7 +3016,7 @@ html, body {
 }
 
 .video-container-bottom {
-  min-height: 39%;
+  min-height: 100%;
   min-width: 100%;
   position: absolute;
   overflow: hidden;
@@ -3024,9 +3024,8 @@ html, body {
 
 .video-container-bottom video {
 min-width: 100%;
-min-height: 40%;
+min-height: 100%;
 position: absolute;
-object-fit: cover;
 z-index: 0;
 }
 
