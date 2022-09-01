@@ -3018,19 +3018,19 @@ html, body {
 .video-container-bottom {
   min-height: 39%;
   min-width: 100%;
-  position: static;
+  position: absolute;
 }
 
 .video-container-bottom video {
 min-width: 100%;
 min-height: 40%;
 position: relative;
-/* object-fit: cover; */
+object-fit: fill;
 z-index: 0;
 }
 
 .video-container-bottom .caption {
-z-index: -1;
+z-index: 1;
 position: relative;
 top: 45%;
 text-align: center;
