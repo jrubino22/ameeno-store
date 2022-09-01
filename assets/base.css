@@ -3025,7 +3025,7 @@ html, body {
 min-width: 100%;
 min-height: 40%;
 position: absolute;
-object-fit: cover;
+/* object-fit: cover; */
 z-index: 0;
 }
 
