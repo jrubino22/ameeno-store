@@ -3019,7 +3019,7 @@ html, body {
   min-height: 39%;
   min-width: 100%;
   position: absolute;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .video-container-bottom video {
