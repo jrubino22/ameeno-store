@@ -1,16 +1,16 @@
 <div class="video-wrapper-bottom">
   <div class="video-container-bottom">
     <video autoplay muted loop>
-        <source src="{{ section.settings.img_product-2 }}" type="video/mp4" />
+        <source src="{{ section.settings.img_product_2 }}" type="video/mp4" />
     </video>
   </div>
     <div class="caption" >
       <div class="bp-text" >
-        <h2>{{ section.settings.section_title-2 }}</h2>
-        <p>{{ section.settings.section_text-2 }}</p>
+        <h2>{{ section.settings.section_title_2 }}</h2>
+        <p>{{ section.settings.section_text_2 }}</p>
     </div>
     <div class="center-image-container">
-        <img src="{{ section.settings.image | image_url: width: 200 }}">
+        <img src="{{ section.settings.image_2 | image_url: width: 200 }}">
     </div>
   </div>
 </div>
@@ -47,22 +47,22 @@
       }, 
       { 
         "type": "text", 
-        "id": "img_product-2", 
+        "id": "img_product_2", 
         "label": "Section video" 
       },
       { 
         "type": "text", 
-        "id": "section_title-2", 
+        "id": "section_title_2", 
         "label": "Section title 1" 
       },
       { 
         "type": "richtext", 
-        "id": "section_text-2", 
+        "id": "section_text_2", 
         "label": "Section content 1" 
       },
       {
         "type": "image_picker",
-        "id": "image",
+        "id": "image_2",
         "label": "center image"
       }
     ], 
