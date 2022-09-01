@@ -3015,7 +3015,7 @@ details-disclosure > details {
   background-color: rgba(255,255,255,0)
 }
 
-.video-container-bottom {
+/* .video-container-bottom {
   position: absolute;
   overflow: hidden;
 }
@@ -3038,4 +3038,4 @@ text-align: center;
 color: #dc0000;
 padding: 10px;
 background-color: rgba(255, 255, 255, 0.7);
-}
+} */
