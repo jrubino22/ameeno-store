@@ -67,7 +67,7 @@
                   </summary>
                   <div class="accordion__content rte" id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}" role="region" aria-labelledby="Summary-{{ block.id }}-{{ section.id }}">
                     {% if block.settings.heading == "Supplement Facts" %} 
-                        {{ product.metafields.custom.supplement_facts }}
+                        <img src="{{ product.metafields.custom.supplement_facts }}">
                     {% endif %}
                     {{ block.settings.row_content }}
                     {{ block.settings.page.content }}
