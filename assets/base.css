@@ -3023,6 +3023,7 @@ html, body {
 width: 100%;
 height: auto;
 object-fit: cover;
+margin-bottom: -5%;
  /* position: absolute;
 top: 0;
 left: 0; */
