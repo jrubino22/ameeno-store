@@ -3022,7 +3022,6 @@ html, body {
 width: 100%;
 height: auto;
 object-fit: cover;
-margin-bottom: -5%;
 /*position: relative;
 top: 0;
 left: 0; */
@@ -3034,10 +3033,9 @@ z-index: 1;
 
 .video-container-bottom .caption {
 position: absolute;
-top: 20%;
+top: 10%;
 width: 100%;
 text-align: center;
 color: #dc0000;
 padding: 10px;
-background-color: rgba(255, 255, 255, 0.7);
 }
