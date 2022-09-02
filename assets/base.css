@@ -3034,8 +3034,7 @@ z-index: 1;
 }
 
 .video-container-bottom .caption {
-z-index: 5;
-position: absolute;
+position: relative;
 top: 45%;
 text-align: center;
 color: #dc0000;
