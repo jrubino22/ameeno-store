@@ -3034,9 +3034,10 @@ z-index: 1;
 }
 
 .video-container-bottom .caption {
+position: absolute;
 
 max-width: 35%;
-bottom:auto;
+bottom:10%;
 text-align: center;
 color: #dc0000;
 padding: 10px;
