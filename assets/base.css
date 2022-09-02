@@ -3022,18 +3022,18 @@ html, body {
 .video-container-bottom video {
 width: 100%;
 height: auto;
-/* position: absolute;
+ position: absolute;
 top: 0;
 left: 0;
-padding: 20% 0;
+  /*padding: 20% 0;
 min-width: 100%;
-min-height: 100%;
-z-index: 0; */
+min-height: 100%; */
+z-index: 0;
 }
 
 .video-container-bottom .caption {
 z-index: 5;
-position: relative;
+position: absolute;
 top: 45%;
 text-align: center;
 color: #dc0000;
