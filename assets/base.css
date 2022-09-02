@@ -3034,7 +3034,7 @@ z-index: 1;
 }
 
 .video-container-bottom .caption {
-position: relative;
+position: absolute;
 top: 45%;
 max-width: 35%;
 bottom:auto;
