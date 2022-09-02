@@ -3014,20 +3014,22 @@ html, body {
   background-color: rgba(255,255,255,0)
 }
 
-/* .video-container-bottom {
-  position: absolute;
-  overflow: hidden;
-}
+  /* .video-container-bottom {
+    position: absolute;
+    overflow: hidden;
+  } */
 
 .video-container-bottom video {
-position: absolute;
+width: 100%;
+height: auto;
+/* position: absolute;
 top: 0;
 left: 0;
 padding: 20% 0;
 min-width: 100%;
 min-height: 100%;
-z-index: 0;
-} */
+z-index: 0; */
+}
 
 .video-container-bottom .caption {
 z-index: 5;
