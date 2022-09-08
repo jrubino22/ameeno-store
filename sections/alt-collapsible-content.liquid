@@ -66,7 +66,7 @@
                     {% render 'icon-caret' %}
                   </summary>
                   <div class="accordion__content rte" id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}" role="region" aria-labelledby="Summary-{{ block.id }}-{{ section.id }}">
-                    {% if block.settings.heading == "Supplement Facts" %} 
+                    {% if block.settings.sup-facts %} 
                         <img src="{{ product.metafields.custom.supplement_facts }} | img_url: '1100x1100' }}">
                     {% endif %}
                     {{ block.settings.row_content }}
@@ -92,6 +92,12 @@
       "type": "text",
       "id": "caption",
       "label": "t:sections.collapsible_content.settings.caption.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "sup-facts",
+      "label": "supplement facts",
+      "default": "false"
     },
     {
       "type": "text",
