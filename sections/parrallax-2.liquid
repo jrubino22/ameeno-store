@@ -12,11 +12,12 @@
   <div class="container text-center col-container" >
     <div class="row align-items-start">
       {% for block in section.blocks %}
-        <div class="col col-12 col-md-3 boot-caption">
-          <h3>{{block.settings.title}}</h3>
-          <i class="fa-solid fa-{{block.settings.icon}} fa-10x"></i>
-          <a class="btn btn-primary" href="{{block.settings.link}}">{{block.settings.link_label}}</a>
-        </div>
+        <a href="{{block.settings.link}}">
+          <div class="col col-12 col-md-3 boot-caption">
+            <h3>{{block.settings.title}}</h3>
+            <i class="fa-solid fa-{{block.settings.icon}} fa-8x"></i>          
+          </div>
+        </a>
       {% endfor %}
     </div>         
   </div>   
@@ -82,12 +83,12 @@
               "label": "pen"
             },
             {
-              "value": "fire",
-              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__14.label"
+              "value": "circle-info",
+              "label": "info"
             },
             {
-              "value": "washing",
-              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__44.label"
+              "value": "question",
+              "label": "question"
             }
           ],
           "default": "pen",
