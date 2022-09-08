@@ -9,11 +9,12 @@
         <p>{{ section.settings.section_text_2 }}</p>
       </div>
       {% if section.settings.image_2 != blank %}
-      <div class="container text-center">
+      <div class="container text-center col-container" >
         <div class="row align-items-start">
           {% for block in section.blocks %}
             <div class="col">
               <h3>{{block.settings.title}}</h3>
+
             </div>
           {% endfor %}
         </div>
