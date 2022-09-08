@@ -59,7 +59,7 @@ if (jQuery(this).scrollTop() > jQuery(".stretch2").offset().top - jQuery(window)
                 right: '0px'
             }, 2000, function () {
                 jQuery('.stretch2').addClass('visible')
-            });
+            }).stop();
         }
     } else {
         if (jQuery('.stretch2').hasClass('visible') == true) {
@@ -67,7 +67,7 @@ if (jQuery(this).scrollTop() > jQuery(".stretch2").offset().top - jQuery(window)
                 right: -(jQuery('.stretch2').outerWidth())
             }, function () {
                 jQuery('.stretch2').removeClass('visible')
-            });
+            }).stop();
         }
     }
 });
