@@ -6,7 +6,7 @@
   <div class="caption" >
     <div class="bp-text" >
       <h2 style="font-size: 4rem">{{ section.settings.section_title_2 }}</h2>
-      <i class="fa-solid fa-pen">
+      <p>{{ section.settings.section_text_2 }}</p>
     </div>
   </div>
   <div class="container text-center col-container" >
@@ -14,7 +14,7 @@
       {% for block in section.blocks %}
         <div class="col col-12 col-md-3 boot-caption">
           <h3>{{block.settings.title}}</h3>
-          <p>{{block.settings.text}}</p>
+          <i class="fa-solid fa-pen"></i>
           <a class="btn btn-primary" href="{{block.settings.link}}">{{block.settings.link_label}}</a>
         </div>
       {% endfor %}
