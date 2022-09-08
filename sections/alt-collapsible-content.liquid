@@ -69,6 +69,11 @@
                     {% if block.settings.sup-facts %} 
                         <img src="{{ product.metafields.custom.supplement_facts }} | img_url: '1100x1100' }}">
                     {% endif %}
+                    {% if block.settings.ntk %}
+                      <ul class="ntk-list">
+                        {{product.metafields.custom.need_to_knows}}
+                      </ul>
+                    {% endif %}
                     {{ block.settings.row_content }}
                     {{ block.settings.page.content }}
                   </div>
@@ -503,6 +508,12 @@
           "type": "checkbox",
           "id": "sup-facts",
           "label": "supplement facts",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "ntk",
+          "label": "need-to-knows",
           "default": false
         }
       ]
