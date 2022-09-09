@@ -10,15 +10,15 @@
       <p>{{section.settings.main_paragraph}}</p>     
     </div>      
     <div class="col col-12 col-md-7">
-      {% for block in section.blocks %}
       <div class="row align-items-start">
+      {% for block in section.blocks %}
         <div class="col-xs-12 col-md-3">
           <i class="fa-solid fa-{{block.settings.icon}} fa-3x me-auto"></i>
           <h4>{{block.settings.block_title}}
           <p>{{block.settings.block_paragraph}}</p>        
         </div>
-      </div>
       {% endfor %}    
+      </div>
     </div>
   </div>         
 </div>   
