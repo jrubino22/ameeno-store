@@ -36,7 +36,7 @@
   }
 {%- endstyle -%}
 
-<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding"  style="margin-top: -5%; padding-top: 13%">
+<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding"  {% if template contains 'index' %} style="margin-top: -5%; padding-top: 13%" {% endif %}>
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
     <div class="footer__content-top page-width">
       {%- if section.blocks.size > 0 -%}
