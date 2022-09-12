@@ -3,8 +3,11 @@
     background-color: white;
     font-size: 2rem;
 }
-.ct-body {
+.ctable {
     width: 100%;
+}
+.ct-head {
+    border-bottom: 5px solid;
 }
 .heading1 {
     min-width: 35%
@@ -21,13 +24,16 @@
 .heading1 {
     min-width: 14%
 }
+.ct-row {
+    border-bottom: 3px solid;
+}
 
 {% endstyle %}
 
 
 <div class="compare-table-container">
-    <table class="ct-body">
-        <thead>
+    <table ctable>
+        <thead class="ct-head">
             <tr class="heading-row">
                 <th class="heading1">{{section.settings.head1}}</th>
                 <th class="heading2">{{section.settings.head2}}</th>
@@ -37,9 +43,9 @@
             </tr>
         </thead>
         <hr>
-        <tbody>
+        <tbody  class="ct-body">
             {% for block in section.blocks %}            
-            <tr>
+            <tr class="ct-row">
                 <td style="word-wrap: break-word">{{block.settings.row_text}}</td>
                 {% if block.settings.icon_box2 %}
                     <td><i class="fa-regular fa-{{block.settings.icon2}} fa-1x me-auto"></i></td>
