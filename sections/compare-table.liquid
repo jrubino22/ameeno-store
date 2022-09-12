@@ -10,25 +10,25 @@
         {% for block in section.blocks %}
         <tr>
             <th>{{block.settings.row_text}}</th>
-            {% if block.settings.icon_box2 === true %}
+            {% if block.settings.icon_box2 %}
                 <td><i class="fa-regular fa-{{block.settings.icon2}} fa-1x me-auto"></i></td>
             {% else %}
                 <td>{{block.settings.data_text2}}</td>
             {% endif %}
 
-            {% if block.settings.icon_box3 === true %}
+            {% if block.settings.icon_box3 %}
             <td><i class="fa-regular fa-{{block.settings.icon3}} fa-1x me-auto"></i></td>
             {% else %}
                 <td>{{block.settings.data_text3}}</td>
             {% endif %}
 
-            {% if block.settings.icon_box4 === true %}
+            {% if block.settings.icon_box4 %}
             <td><i class="fa-regular fa-{{block.settings.icon4}} fa-1x me-auto"></i></td>
             {% else %}
                 <td>{{block.settings.data_text4}}</td>
             {% endif %}
 
-            {% if block.settings.icon_box5 === true %}
+            {% if block.settings.icon_box5 %}
             <td><i class="fa-regular fa-{{block.settings.icon5}} fa-1x me-auto"></i></td>
             {% else %}
                 <td>{{block.settings.data_text5}}</td>
@@ -80,7 +80,7 @@
       {
         "type": "richtext",
         "id": "row_text",
-        "default": "Row header goes right here in this spot",
+        "default": "<p>Row header goes right here in this spot</p>",
         "label": "Row Header"
       },
       {
@@ -190,7 +190,7 @@
         "type": "text",
         "id": "data_text5",
         "label": "text column 5 (example: 'Rare')"
-      },
+      }
     ]
   }
 ],  
