@@ -1,4 +1,7 @@
 {% style %}
+.table-title {
+    font-size: 3.8rem;
+}
 .compare-table-container {
     background-color: white;
     font-size: 2rem;
@@ -15,16 +18,16 @@
 .heading1 {
     width: 35%
 }
-.heading1 {
+.heading2 {
     width: 14%
 }
-.heading1 {
+.heading3 {
     width: 14%
 }
-.heading1 {
+.heading4 {
     width: 14%
 }
-.heading1 {
+.heading5 {
     width: 14%
 }
 .ct-row {
@@ -36,49 +39,51 @@
 
 {% endstyle %}
 
-
-<div class="compare-table-container">
-    <table ctable>
-        <thead class="ct-head">
-            <tr class="heading-row">
-                <th class="heading1">{{section.settings.head1}}</th>
-                <th class="heading2">{{section.settings.head2}}</th>
-                <th class="heading3">{{section.settings.head3}}</th>
-                <th class="heading4">{{section.settings.head4}}</th>
-                <th class="heading5">{{section.settings.head5}}</th>
-            </tr>
-        </thead>
-        <tbody  class="ct-body">
-            {% for block in section.blocks %}            
-                <tr class="ct-row">
-                    <td style="word-wrap: break-word">{{block.settings.row_text}}</td>
-                    {% if block.settings.icon_box2 %}
-                        <td class="td-cell"><i class="fa-regular fa-{{block.settings.icon2}} fa-2x me-auto"></i></td>
-                    {% else %}
-                        <td class="td-cell">{{block.settings.data_text2}}</td>
-                    {% endif %}
-
-                    {% if block.settings.icon_box3 %}
-                        <td class="td-cell"><i class="fa-regular fa-{{block.settings.icon3}} fa-2x me-auto"></i></td>
-                    {% else %}
-                        <td class="td-cell">{{block.settings.data_text3}}</td>
-                    {% endif %}
-
-                    {% if block.settings.icon_box4 %}
-                        <td class="td-cell"><i class="fa-regular fa-{{block.settings.icon4}} fa-2x me-auto"></i></td>
-                    {% else %}
-                        <td class="td-cell">{{block.settings.data_text4}}</td>
-                    {% endif %}
-
-                    {% if block.settings.icon_box5 %}
-                        <td class="td-cell"><i class="fa-regular fa-{{block.settings.icon5}} fa-2x me-auto"></i></td>
-                    {% else %}
-                        <td class="td-cell">{{block.settings.data_text5}}</td>
-                    {% endif %}
+<div class="table-section-container">
+    <h2 class="table-title">{{section.settings.table_title}}</h2>
+    <div class="compare-table-container">
+        <table ctable>
+            <thead class="ct-head">
+                <tr class="heading-row">
+                    <th class="heading1">{{section.settings.head1}}</th>
+                    <th class="heading2">{{section.settings.head2}}</th>
+                    <th class="heading3">{{section.settings.head3}}</th>
+                    <th class="heading4">{{section.settings.head4}}</th>
+                    <th class="heading5">{{section.settings.head5}}</th>
                 </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+            </thead>
+            <tbody  class="ct-body">
+                {% for block in section.blocks %}            
+                    <tr class="ct-row">
+                        <td style="word-wrap: break-word">{{block.settings.row_text}}</td>
+                        {% if block.settings.icon_box2 %}
+                            <td class="td-cell"><i class="fa-regular fa-{{block.settings.icon2}} fa-2x me-auto"></i></td>
+                        {% else %}
+                            <td class="td-cell">{{block.settings.data_text2}}</td>
+                        {% endif %}
+
+                        {% if block.settings.icon_box3 %}
+                            <td class="td-cell"><i class="fa-regular fa-{{block.settings.icon3}} fa-2x me-auto"></i></td>
+                        {% else %}
+                            <td class="td-cell">{{block.settings.data_text3}}</td>
+                        {% endif %}
+
+                        {% if block.settings.icon_box4 %}
+                            <td class="td-cell"><i class="fa-regular fa-{{block.settings.icon4}} fa-2x me-auto"></i></td>
+                        {% else %}
+                            <td class="td-cell">{{block.settings.data_text4}}</td>
+                        {% endif %}
+
+                        {% if block.settings.icon_box5 %}
+                            <td class="td-cell"><i class="fa-regular fa-{{block.settings.icon5}} fa-2x me-auto"></i></td>
+                        {% else %}
+                            <td class="td-cell">{{block.settings.data_text5}}</td>
+                        {% endif %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </div>
 
 {% schema %} 
@@ -89,6 +94,11 @@
       "type": "header", 
       "content": "Comparative Table" 
     }, 
+    {
+        "type": "text",
+        "id": "table_title",
+        "label":"Table Title"
+    },
     { 
       "type": "text", 
       "id": "head1", 
