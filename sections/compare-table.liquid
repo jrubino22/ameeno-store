@@ -26,45 +26,49 @@
 
 
 <div class="compare-table-container">
-    <tbody class="ct-body">
-        <tr class="heading-row">
-            <th class="heading1">{{section.settings.head1}}</th>
-            <th class="heading2">{{section.settings.head2}}</th>
-            <th class="heading3">{{section.settings.head3}}</th>
-            <th class="heading4">{{section.settings.head4}}</th>
-            <th class="heading5">{{section.settings.head5}}</th>
-        </tr>
+    <table class="ct-body">
+        <thead>
+            <tr class="heading-row">
+                <th class="heading1">{{section.settings.head1}}</th>
+                <th class="heading2">{{section.settings.head2}}</th>
+                <th class="heading3">{{section.settings.head3}}</th>
+                <th class="heading4">{{section.settings.head4}}</th>
+                <th class="heading5">{{section.settings.head5}}</th>
+            </tr>
+        </thead>
         <hr>
-        {% for block in section.blocks %}
-        <tr>
-            <td style="word-wrap: break-word">{{block.settings.row_text}}</td>
-            {% if block.settings.icon_box2 %}
-                <td><i class="fa-regular fa-{{block.settings.icon2}} fa-1x me-auto"></i></td>
-            {% else %}
-                <td>{{block.settings.data_text2}}</td>
-            {% endif %}
+        <tbody>
+            {% for block in section.blocks %}            
+            <tr>
+                <td style="word-wrap: break-word">{{block.settings.row_text}}</td>
+                {% if block.settings.icon_box2 %}
+                    <td><i class="fa-regular fa-{{block.settings.icon2}} fa-1x me-auto"></i></td>
+                {% else %}
+                    <td>{{block.settings.data_text2}}</td>
+                {% endif %}
 
-            {% if block.settings.icon_box3 %}
-            <td><i class="fa-regular fa-{{block.settings.icon3}} fa-1x me-auto"></i></td>
-            {% else %}
-                <td>{{block.settings.data_text3}}</td>
-            {% endif %}
+                {% if block.settings.icon_box3 %}
+                <td><i class="fa-regular fa-{{block.settings.icon3}} fa-1x me-auto"></i></td>
+                {% else %}
+                    <td>{{block.settings.data_text3}}</td>
+                {% endif %}
 
-            {% if block.settings.icon_box4 %}
-            <td><i class="fa-regular fa-{{block.settings.icon4}} fa-1x me-auto"></i></td>
-            {% else %}
-                <td>{{block.settings.data_text4}}</td>
-            {% endif %}
+                {% if block.settings.icon_box4 %}
+                <td><i class="fa-regular fa-{{block.settings.icon4}} fa-1x me-auto"></i></td>
+                {% else %}
+                    <td>{{block.settings.data_text4}}</td>
+                {% endif %}
 
-            {% if block.settings.icon_box5 %}
-            <td><i class="fa-regular fa-{{block.settings.icon5}} fa-1x me-auto"></i></td>
-            {% else %}
-                <td>{{block.settings.data_text5}}</td>
-            {% endif %}
-        </tr>
-        <hr>
-        {% endfor %}
-    </tbody>
+                {% if block.settings.icon_box5 %}
+                <td><i class="fa-regular fa-{{block.settings.icon5}} fa-1x me-auto"></i></td>
+                {% else %}
+                    <td>{{block.settings.data_text5}}</td>
+                {% endif %}
+            </tr>
+            <hr>
+            {% endfor %}
+        </tbody>
+    </table>
 </div>
 
 {% schema %} 
