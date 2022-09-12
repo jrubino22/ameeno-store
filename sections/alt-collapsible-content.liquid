@@ -62,7 +62,7 @@
                 <details id="Details-{{ block.id }}-{{ section.id }}"{% if section.settings.open_first_collapsible_row and forloop.first %} open{% endif %}>
                   <summary id="Summary-{{ block.id }}-{{ section.id }}">
                     {% render 'icon-accordion', icon: block.settings.icon %}
-                    <h3 class="accordion__title h4">
+                    <h3 class="accordion__title" style="font-size: 2.8rem">
                       {{ block.settings.heading | default: block.settings.page.title }}
                     </h3>
                     {% render 'icon-caret' %}
@@ -72,7 +72,7 @@
                         <img src="{{ product.metafields.custom.supplement_facts }} | img_url: '1100x1100' }}">
                     {% endif %}
                     {% if block.settings.ntk %}
-                      <ul class="ntk">
+                      <ul class="ntk" style="font-size: 1.6rem">
                         {{product.metafields.custom.need_to_knows}}
                       </ul>
                     {% endif %}
