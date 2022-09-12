@@ -1,0 +1,204 @@
+<div class="compare-table-container">
+    <tbody>
+        <tr>
+            <th>{{section.settings.head1}}</th>
+            <th>{{section.settings.head2}}</th>
+            <th>{{section.settings.head3}}</th>
+            <th>{{section.settings.head4}}</th>
+            <th>{{section.settings.head5}}</th>
+        </tr>
+        {% for block in section.blocks %}
+        <tr>
+            <th>{{block.settings.row_text}}</th>
+            {% if block.settings.icon_box2 === true %}
+                <td><i class="fa-regular fa-{{block.settings.icon2}} fa-1x me-auto"></i></td>
+            {% else %}
+                <td>{{block.settings.data_text2}}</td>
+            {% endif %}
+
+            {% if block.settings.icon_box3 === true %}
+            <td><i class="fa-regular fa-{{block.settings.icon3}} fa-1x me-auto"></i></td>
+            {% else %}
+                <td>{{block.settings.data_text3}}</td>
+            {% endif %}
+
+            {% if block.settings.icon_box4 === true %}
+            <td><i class="fa-regular fa-{{block.settings.icon4}} fa-1x me-auto"></i></td>
+            {% else %}
+                <td>{{block.settings.data_text4}}</td>
+            {% endif %}
+
+            {% if block.settings.icon_box5 === true %}
+            <td><i class="fa-regular fa-{{block.settings.icon5}} fa-1x me-auto"></i></td>
+            {% else %}
+                <td>{{block.settings.data_text5}}</td>
+            {% endif %}
+        </tr>
+        {% endfor %}
+    </tbody>
+</div>
+
+{% schema %} 
+{ 
+  "name": "Comparative Table", 
+  "settings": [ 
+    { 
+      "type": "header", 
+      "content": "Comparative Table" 
+    }, 
+    { 
+      "type": "text", 
+      "id": "head1", 
+      "label": "table header 1" 
+    },
+    { 
+      "type": "text", 
+      "id": "head2", 
+      "label": "table header 2" 
+    },
+    { 
+        "type": "text", 
+        "id": "head3", 
+        "label": "table header 3" 
+    },
+    { 
+        "type": "text", 
+        "id": "head4", 
+        "label": "table header 4" 
+    },
+    { 
+        "type": "text", 
+        "id": "head5", 
+        "label": "table header 5" 
+    }
+  ], 
+  "blocks": [
+  {
+    "type": "column",
+    "name": "Row Blocks",
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "row_text",
+        "default": "Row header goes right here in this spot",
+        "label": "Row Header"
+      },
+      {
+        "type": "checkbox",
+        "id": "icon_box2",
+        "default": true,
+        "label": "Use empty box or checked Icon column 2 (leave empty for text)"
+      },
+      {
+        "type": "select",
+        "id": "icon2",
+        "options": [
+          {
+            "value": "square-check",
+            "label": "checked"
+          },
+          {
+            "value": "square",
+            "label": "unchecked"
+          }
+        ],
+        "default": "square",
+        "label": "checkbox column 2"
+      },
+      {
+        "type": "text",
+        "id": "data_text2",
+        "label": "text column 2 (example: 'Rare')"
+      },
+      {
+        "type": "checkbox",
+        "id": "icon_box3",
+        "default": true,
+        "label": "Use empty box or checked Icon column 3(leave empty for text)"
+      },
+      {
+        "type": "select",
+        "id": "icon3",
+        "options": [
+          {
+            "value": "square-check",
+            "label": "checked"
+          },
+          {
+            "value": "square",
+            "label": "unchecked"
+          }
+        ],
+        "default": "square",
+        "label": "checkbox column 3"
+      },
+      {
+        "type": "text",
+        "id": "data_text3",
+        "label": "text column 3 (example: 'Rare')"
+      },
+      {
+        "type": "checkbox",
+        "id": "icon_box4",
+        "default": true,
+        "label": "Use empty box or checked Icon column 4 (leave empty for text)"
+      },
+      {
+        "type": "select",
+        "id": "icon4",
+        "options": [
+          {
+            "value": "square-check",
+            "label": "checked"
+          },
+          {
+            "value": "square",
+            "label": "unchecked"
+          }
+        ],
+        "default": "square",
+        "label": "checkbox column 4"
+      },
+      {
+        "type": "text",
+        "id": "data_text4",
+        "label": "text column 4 (example: 'Rare')"
+      },
+      {
+        "type": "checkbox",
+        "id": "icon_box5",
+        "default": true,
+        "label": "Use empty box or checked Icon column 5 (leave empty for text)"
+      },
+      {
+        "type": "select",
+        "id": "icon5",
+        "options": [
+          {
+            "value": "square-check",
+            "label": "checked column 5"
+          },
+          {
+            "value": "square",
+            "label": "unchecked"
+          }
+        ],
+        "default": "square",
+        "label": "checkbox"
+      },
+      {
+        "type": "text",
+        "id": "data_text5",
+        "label": "text column 5 (example: 'Rare')"
+      },
+    ]
+  }
+],  
+  "presets": [ 
+    { 
+      "name": "Comparative Table", 
+      "category": "video" 
+    } 
+  ] 
+} 
+{% endschema %} 
