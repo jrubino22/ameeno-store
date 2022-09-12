@@ -1,5 +1,17 @@
+{% style %}
+.compare-table-container {
+    background-color: white;
+    font-size: 2rem;
+}
+
+.ct-body {
+    width: 100%;
+}
+{% endstyle %}
+
+
 <div class="compare-table-container">
-    <tbody>
+    <tbody class="ct-body">
         <tr>
             <th>{{section.settings.head1}}</th>
             <th>{{section.settings.head2}}</th>
@@ -7,6 +19,7 @@
             <th>{{section.settings.head4}}</th>
             <th>{{section.settings.head5}}</th>
         </tr>
+        <hr>
         {% for block in section.blocks %}
         <tr>
             <th>{{block.settings.row_text}}</th>
@@ -34,6 +47,7 @@
                 <td>{{block.settings.data_text5}}</td>
             {% endif %}
         </tr>
+        <hr>
         {% endfor %}
     </tbody>
 </div>
