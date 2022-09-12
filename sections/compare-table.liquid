@@ -3,26 +3,41 @@
     background-color: white;
     font-size: 2rem;
 }
-
 .ct-body {
     width: 100%;
 }
+.heading1 {
+    min-width: 35%
+}
+.heading1 {
+    min-width: 14%
+}
+.heading1 {
+    min-width: 14%
+}
+.heading1 {
+    min-width: 14%
+}
+.heading1 {
+    min-width: 14%
+}
+
 {% endstyle %}
 
 
 <div class="compare-table-container">
     <tbody class="ct-body">
-        <tr>
-            <th>{{section.settings.head1}}</th>
-            <th>{{section.settings.head2}}</th>
-            <th>{{section.settings.head3}}</th>
-            <th>{{section.settings.head4}}</th>
-            <th>{{section.settings.head5}}</th>
+        <tr class="heading-row">
+            <th class="heading1">{{section.settings.head1}}</th>
+            <th class="heading2">{{section.settings.head2}}</th>
+            <th class="heading3">{{section.settings.head3}}</th>
+            <th class="heading4">{{section.settings.head4}}</th>
+            <th class="heading5">{{section.settings.head5}}</th>
         </tr>
         <hr>
         {% for block in section.blocks %}
         <tr>
-            <th>{{block.settings.row_text}}</th>
+            <td style="word-wrap: break-word">{{block.settings.row_text}}</td>
             {% if block.settings.icon_box2 %}
                 <td><i class="fa-regular fa-{{block.settings.icon2}} fa-1x me-auto"></i></td>
             {% else %}
