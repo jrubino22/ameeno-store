@@ -62,7 +62,7 @@
                 <details id="Details-{{ block.id }}-{{ section.id }}"{% if section.settings.open_first_collapsible_row and forloop.first %} open{% endif %}>
                   <summary id="Summary-{{ block.id }}-{{ section.id }}">
                     {% render 'icon-accordion', icon: block.settings.icon %}
-                    <h3 class="accordion__title" style="font-size: 2.8rem">
+                    <h3 class="accordion__title" style="font-size: 2.0rem">
                       {{ block.settings.heading | default: block.settings.page.title }}
                     </h3>
                     {% render 'icon-caret' %}
