@@ -2,7 +2,8 @@
 .compare-table-container {
     background-color: white;
     font-size: 2rem;
-    text-align: center
+    align-items: center;
+    margin-top: 5%;
 }
 .ctable {
     width: 100%;
@@ -43,7 +44,6 @@
                 <th class="heading5">{{section.settings.head5}}</th>
             </tr>
         </thead>
-        <hr>
         <tbody  class="ct-body">
             {% for block in section.blocks %}            
             <tr class="ct-row">
@@ -72,7 +72,6 @@
                     <td>{{block.settings.data_text5}}</td>
                 {% endif %}
             </tr>
-            <hr>
             {% endfor %}
         </tbody>
     </table>
