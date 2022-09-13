@@ -1,14 +1,15 @@
-{% style %}
+<style>
 .background-image-div {
-
+    background-image:url('{{ section.settings.background_image| img_url: 'master' }}'');
+    background-size: cover;
 }
 .mi-title {
 
 }
+</style>
 
-{% endstyle %}
 <div class="main-info-container">
-    <div class="background-image-div" style="background-image: url({{section.settings.background_image}});">
+    <div class="background-image-div">
         <div class="mi-title">
             <h2>{{section.settings.main_title}}</h2>
         </div>
