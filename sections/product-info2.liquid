@@ -1,0 +1,59 @@
+{% style %}
+.background-image-div {
+
+}
+.mi-title {
+
+}
+
+{% endstyle %}
+<div class="main-info-container">
+    <div class="background-image-div" style="background-image: url('{{section.settings.background_image}}')">
+        <div class="mi-title">
+            <h2>{{section.settings.main_title}}</h2>
+        </div>
+        <div class="left-paragraph">
+            <p>{{section.settings.left_text}}</p>
+        </div>
+        <div class="right-paragraph">
+            <p>{{section.settings.right_text}}</p>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Product Info Section",
+    "settings": [
+    {
+    "type": "header",
+    "content": "Product Info Section"
+    },
+    {
+    "type": "text",
+    "id": "background_image",
+    "label": "Background Image Link"
+    },
+    {
+    "type": "text",
+    "id": "main_title",
+    "label": "Section Title"
+    },
+    {
+    "type": "richtext",
+    "id": "left_text",
+    "label": "left paragraph"
+    },
+    {
+    "type": "richtext",
+    "id": "right_text",
+    "label": "right paragraph"
+    }
+],
+"presets": [
+{
+"name": "product info section"
+}
+]
+}
+{% endschema %}
