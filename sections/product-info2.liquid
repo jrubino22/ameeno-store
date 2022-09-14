@@ -1,10 +1,12 @@
 <style>
 .background-image-div {
-    background-image: url("{{ section.settings.background_image| img_url: 'master' }}");
     background-size: cover;
+    background-image: url({{ section.settings.background_image }});
 }
 
 </style>
+
+{{% assign  %}}
 
 <div class="main-info-container">
     <div class="background-image-div">
@@ -19,6 +21,13 @@
         </div>
     </div>
 </div>
+
+<script>
+    $(window).ready(function(){
+        const bgImage = {{}}
+        $('.background-image-div').css('background-image', 'img({{ section.settings.background_image }})')
+    })
+</script>
 
 {% schema %}
 {
