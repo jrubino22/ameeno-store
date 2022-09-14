@@ -1,7 +1,7 @@
 <style>
 .background-image-div {
     background-size: cover;
-    background-image: url({{ section.settings.background_image | image_url }});
+    background-image: url("{{ section.settings.background_image | image_url: 'master' }}");
 }
 
 </style>
