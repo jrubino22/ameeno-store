@@ -1,18 +1,16 @@
 {% style %}
-.background-image-div {
+.main-pep-div {
+    width: 200px;
+    height: 200px;
     overflow: hidden;
-    position: relative;
-    width: 100%;
-    
+    display: flex;
+}
+.background-image-div {
 }
 .img{
     pointer-events: none;
-    position: relative;
-    top: -9999px;
-    bottom: -9999px;
-    left: -9999px;
-    right: -9999px;
-    margin: auto;
+    width: 100%;
+    align-self: center;
     z-index: -1;
 }
 .mi-title {
@@ -22,19 +20,20 @@
 
 {% endstyle %}
 
-
+<div class="main-pep-div">
     <div class="background-image-div">
         <img class="info-image bg-image" src="{{section.settings.background_image}}" alt="{{section.settings.alt}}">
-        <div class="mi-title">
-            <h2>{{section.settings.main_title}}</h2>
-        </div>
-        <div class="left-paragraph">
-            <p>{{section.settings.left_text}}</p>
-        </div>
-        <div class="right-paragraph">
-            <p>{{section.settings.right_text}}</p>
-        </div>
     </div>
+    <div class="mi-title">
+        <h2>{{section.settings.main_title}}</h2>
+    </div>
+    <div class="left-paragraph">
+        <p>{{section.settings.left_text}}</p>
+    </div>
+    <div class="right-paragraph">
+        <p>{{section.settings.right_text}}</p>
+    </div>
+</div>
 
 
 
