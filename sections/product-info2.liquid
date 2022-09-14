@@ -1,13 +1,26 @@
 {% style %}
 .background-image-div {
-    background-size: cover;
-    background-image: url("https://cdn.shopify.com/s/files/1/0594/1886/9853/files/pill5.jpg?v=1660933400");
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.img{
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.mi-title {
+    padding: 25px;
 }
 
 {% endstyle %}
 
 <div class="main-info-container">
     <div class="background-image-div">
+        <img class="info-image" src="{{section.settings.background_image}}" alt="{{section.settings.alt}}">
         <div class="mi-title">
             <h2>{{section.settings.main_title}}</h2>
         </div>
@@ -30,9 +43,14 @@
     "content": "Capsule Info Section"
     },
     {
-    "type": "image_picker",
+    "type": "text",
     "id": "background_image",
     "label": "Background Image Link"
+    },
+    {
+    "type": "text",
+    "id": "alt",
+    "label": "background image alt text"
     },
     {
     "type": "text",
