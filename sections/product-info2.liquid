@@ -1,11 +1,9 @@
 <style>
 .background-image-div {
-    background-image:url('{{ section.settings.background_image| img_url: 'master' }}'');
+    background-image: url("{{ section.settings.background_image| img_url: 'master' }}");
     background-size: cover;
 }
-.mi-title {
 
-}
 </style>
 
 <div class="main-info-container">
@@ -24,11 +22,11 @@
 
 {% schema %}
 {
-    "name": "Product Info Section",
+    "name": "Capsule Info Section",
     "settings": [
     {
     "type": "header",
-    "content": "Product Info Section"
+    "content": "Capsule Info Section"
     },
     {
     "type": "text",
@@ -53,7 +51,7 @@
 ],
 "presets": [
 {
-"name": "product info section"
+"name": "Capsule info section"
 }
 ]
 }
