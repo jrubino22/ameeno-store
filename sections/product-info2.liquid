@@ -35,13 +35,13 @@
     </div>
 
     <div class="pep-content-row d-flex flex-row justify-content-around p-md-5">
-        <div class="left-paragraph" style="visibility: hidden;" >
+        <div class="left-paragraph" style="display: none;" >
             <p>{{section.settings.left_text}}</p>
         </div>
         <div class="background-image-div">
             <img class="info-image bg-image" src="{{section.settings.background_image}}" alt="{{section.settings.alt}}">
         </div>
-        <div class="right-paragraph" style="visibility: hidden;" >
+        <div class="right-paragraph" style="display: none;" >
             <p>{{section.settings.right_text}}</p>
         </div>
     </div>
@@ -59,12 +59,13 @@ $(window).scroll(function(e){
     const triggerPoint2 = topSpace - (spaceAboveDiv * .3)
 
     if($(this).scrollTop() > triggerPoint1) {
-        leftPar.css('visibility', 'visible').fadeIn('slow');
+        leftPar.fadeIn('slow');
     }
     if($(this).scrollTop() >  triggerPoint2) {
-        rightPar.css('visibility', 'visible').fadeIn('slow');       
+        rightPar.fadeIn('slow');       
     }
 })
+// .css('visibility', 'visible')
 </script>
 
 {% schema %}
