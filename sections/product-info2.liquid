@@ -59,13 +59,10 @@ $(window).scroll(function(e){
     const triggerPoint2 = topSpace - (spaceAboveDiv * .3)
 
     if($(this).scrollTop() > triggerPoint1) {
-        leftPar.fadeIn('slow', function(){
-        leftPar.css('visibility', 'visible').hide().fadeIn('slow')
-        })
+        leftPar.css('visibility', 'visible').hide().fadeIn('slow');
     }
     if($(this).scrollTop() >  triggerPoint2) {
-        rightPar.css({'visibility': 'visible'}).hide().fadeIn('slow')
-        
+        rightPar.css('visibility', 'visible').hide().fadeIn('slow');       
     }
 })
 </script>
