@@ -13,18 +13,18 @@
   }
 
 {% endstyle %}
-<div class="offset-md-1 container col-container ms-md-5 benefits_container pb-5" style="min-width: 100% " >
+<div class="container col-container ms-md-5 benefits_container pb-5" style="min-width: 100% " >
   <div class="row mb-5 mt-5 pb-md-5">
     <div class="col-12 col-md-8 me-auto offset-md-1">
       <h2 class="section--head">{{section.settings.main_title}}</h2>
     </div>
   </div>
-  <div class="row ms-md-5">
+  <div class="row offset-md-1 ms-md-5">
     <div class="col col-12 col-md-3 boot-caption me-md-5">
       <h3 style="margin-bottom: 2%;">{{section.settings.secondary_title}}</h3>
       <p>{{section.settings.main_paragraph}}</p>     
     </div>      
-    <div class="col col-12 col-md-7">
+    <div class="col col-12 col-md-6">
       <div class="row">
       {% for block in section.blocks %}
         <div class="col-xs-12 col-md-4 pe-md-3 pb-md-4">
