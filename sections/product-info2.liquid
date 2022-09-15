@@ -21,13 +21,16 @@
 
 {% endstyle %}
 
-<div class="main-pep-div">
+<div class="main-pep-div container col-container">
+    <div class="row">
+        <div class="col-md-5 col-12 offset-md-2 mi-title">
+            <h2>{{section.settings.main_title}}</h2>
+        </div>
+    </div>
     <div class="background-image-div">
         <img class="info-image bg-image" src="{{section.settings.background_image}}" alt="{{section.settings.alt}}">
     </div>
-    <div class="mi-title">
-        <h2>{{section.settings.main_title}}</h2>
-    </div>
+
     <div class="left-paragraph">
         <p>{{section.settings.left_text}}</p>
     </div>
