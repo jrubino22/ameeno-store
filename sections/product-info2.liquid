@@ -17,6 +17,10 @@
 }
 .mi-title {
     padding: 25px;
+    font-size: 3.5em;
+}
+.pep-content-row {
+    font-size: 1.2em;
 }
 
 {% endstyle %}
@@ -27,15 +31,17 @@
             <h2>{{section.settings.main_title}}</h2>
         </div>
     </div>
-    <div class="background-image-div">
-        <img class="info-image bg-image" src="{{section.settings.background_image}}" alt="{{section.settings.alt}}">
-    </div>
 
-    <div class="left-paragraph">
-        <p>{{section.settings.left_text}}</p>
-    </div>
-    <div class="right-paragraph">
-        <p>{{section.settings.right_text}}</p>
+    <div class="row pep-content-row d-flex justify-content-around">
+        <div class="left-paragraph">
+            <p>{{section.settings.left_text}}</p>
+        </div>
+        <div class="background-image-div" >
+            <img class="info-image bg-image" src="{{section.settings.background_image}}" alt="{{section.settings.alt}}">
+        </div>
+        <div class="right-paragraph">
+            <p>{{section.settings.right_text}}</p>
+        </div>
     </div>
 </div>
 
