@@ -60,7 +60,7 @@ $(window).scroll(function(e){
 
     if($(this).scrollTop() > triggerPoint1) {
         leftPar.fadeIn('slow', function(){
-        leftPar.css({'visibility': 'visible'})
+        leftPar.css('visibility', 'visible').hide().fadeIn('slow')
         })
     }
     if($(this).scrollTop() >  triggerPoint2) {
