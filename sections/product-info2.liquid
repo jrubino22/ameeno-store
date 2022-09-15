@@ -27,7 +27,7 @@
 
 {% endstyle %}
 
-<div class="main-pep-div container col-container">
+<div class="main-pep-div container col-container pt-md-5 pb-md-5">
     <div class="row">
         <div class="col-md-8 me-auto col-12 mi-title">
             <h2>{{section.settings.main_title}}</h2>
@@ -55,14 +55,14 @@ $(window).scroll(function(e){
     const divHeight = $('.main-pep-div').height();
     const viewportHeight = $('body').innerHeight();
     const spaceAboveDiv = viewportHeight - divHeight;
-    const triggerPoint = topSpace - spaceAboveDiv;
+    const triggerPoint1 = topSpace - spaceAboveDiv;
+    const triggerPoint2 = topSpace - (spaceAboveDiv * .5)
 
-    if($(this).scrollTop() > triggerPoint) {
-        console.log(triggerPoint, topSpace)
-
+    if($(this).scrollTop() > triggerPoint1) {
         leftPar.fadeIn('slow');
         leftPar.css({'visibility': 'visible'});
-
+    }
+    if($(this).scrollTop() >  triggerPoint2) {
         rightPar.fadeIn('slow');
         rightPar.css({'visibility': 'visible'});
     }
