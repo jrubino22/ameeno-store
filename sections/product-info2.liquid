@@ -35,19 +35,53 @@
     </div>
 
     <div class="pep-content-row d-flex flex-row justify-content-around p-md-5">
-        <div class="left-paragraph ">
+        <div class="left-paragraph" style="visibility: hidden;" >
             <p>{{section.settings.left_text}}</p>
         </div>
-        <div class="background-image-div" >
+        <div class="background-image-div">
             <img class="info-image bg-image" src="{{section.settings.background_image}}" alt="{{section.settings.alt}}">
         </div>
-        <div class="right-paragraph">
+        <div class="right-paragraph" style="visibility: hidden;" >
             <p>{{section.settings.right_text}}</p>
         </div>
     </div>
 </div>
 
+<script>
+$(window).scroll(function(e){
+    const leftPar = $('.left-paragraph')
+    const rightPar = $('')
+})
 
+
+
+$(window).scroll(function(e){ 
+    var $el = $('.fixedElement'); 
+    var fromTop = $('.leftDiv').offset().top;
+    var divHeight = $('.fc2Div').height();
+    var viewportHeight = $("body").innerHeight()
+    var bottomLimit = fromTop + divHeight - viewportHeight
+    var isPositionFixed = ($el.css('position') == 'fixed');
+    if ($(this).scrollTop() > fromTop && $(this).scrollTop() < bottomLimit && !isPositionFixed){ 
+      console.log(fromTop)
+      console.log(bottomLimit)
+      $el.fadeIn('slow');
+      $el.css({'position': 'fixed', 'top': '50%', 'left': '8%', 'max-width': '20%', 'display':'block'}); 
+    }
+    if ($(this).scrollTop() < fromTop && isPositionFixed){
+      $el.fadeOut('slow');
+      $el.css({'position':'absolute', 'display': 'none'}); 
+    } 
+    if ($(this).scrollTop() > bottomLimit && isPositionFixed){ 
+      $el.fadeOut('slow');
+      $el.css({'position':'absolute', 'display':'none'}); 
+    }
+    if ($(this).scrollTop() < bottomLimit && $(this).scrollTop() > fromTop && !isPositionFixed){
+      $el.fadeIn('slow');
+      $el.css({'position': 'fixed', 'top': '50%', 'left':'8%', 'max-width': '20%', 'display': 'block'}); 
+    } 
+  });
+</script>
 
 {% schema %}
 {
