@@ -49,38 +49,24 @@
 
 <script>
 $(window).scroll(function(e){
-    const leftPar = $('.left-paragraph')
-    const rightPar = $('')
+    const leftPar = $('.left-paragraph');
+    const rightPar = $('.right-paragraph');
+    const topSpace = $('.main-pep-div').offset().top;
+    const divHeight = $('.main-pep-div').height();
+    const viewportHeight = $('body').innerHeight();
+    const spaceAboveDiv = viewportHeight - divHeight;
+    const triggerPoint = topSpace - spaceAboveDiv;
+
+    if($(this).scrollTop() > triggerPoint) {
+        console.log(triggerPoint, topSpace)
+
+        leftPar.fadeIn('slow');
+        leftPar.css({'visibility': 'visible'});
+
+        rightPar.fadeIn('slow');
+        rightPar.css({'visibility': 'visible'});
+    }
 })
-
-
-
-$(window).scroll(function(e){ 
-    var $el = $('.fixedElement'); 
-    var fromTop = $('.leftDiv').offset().top;
-    var divHeight = $('.fc2Div').height();
-    var viewportHeight = $("body").innerHeight()
-    var bottomLimit = fromTop + divHeight - viewportHeight
-    var isPositionFixed = ($el.css('position') == 'fixed');
-    if ($(this).scrollTop() > fromTop && $(this).scrollTop() < bottomLimit && !isPositionFixed){ 
-      console.log(fromTop)
-      console.log(bottomLimit)
-      $el.fadeIn('slow');
-      $el.css({'position': 'fixed', 'top': '50%', 'left': '8%', 'max-width': '20%', 'display':'block'}); 
-    }
-    if ($(this).scrollTop() < fromTop && isPositionFixed){
-      $el.fadeOut('slow');
-      $el.css({'position':'absolute', 'display': 'none'}); 
-    } 
-    if ($(this).scrollTop() > bottomLimit && isPositionFixed){ 
-      $el.fadeOut('slow');
-      $el.css({'position':'absolute', 'display':'none'}); 
-    }
-    if ($(this).scrollTop() < bottomLimit && $(this).scrollTop() > fromTop && !isPositionFixed){
-      $el.fadeIn('slow');
-      $el.css({'position': 'fixed', 'top': '50%', 'left':'8%', 'max-width': '20%', 'display': 'block'}); 
-    } 
-  });
 </script>
 
 {% schema %}
