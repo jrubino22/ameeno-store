@@ -56,7 +56,7 @@ $(window).scroll(function(e){
     const viewportHeight = $('body').innerHeight();
     const spaceAboveDiv = viewportHeight - divHeight;
     const triggerPoint1 = topSpace - spaceAboveDiv;
-    const triggerPoint2 = topSpace - (spaceAboveDiv * .5)
+    const triggerPoint2 = topSpace - (spaceAboveDiv * .3)
 
     if($(this).scrollTop() > triggerPoint1) {
         leftPar.fadeIn('slow', function(){
