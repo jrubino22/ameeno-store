@@ -3,7 +3,7 @@
 {{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-  html body {
+  body {
     background-color: white;
   }
 
@@ -22,11 +22,10 @@
 
 
 {%- paginate blog.articles by 30 -%}
-  <div class="main-blog page-width section-{{ section.id }}-padding">
+  <div class="main-blog page-width section-{{ section.id }}-padding" style="background-color: white;">
     <h1 class="title--primary">{{ blog.title | escape }}</h1>
-
-    <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}" style="font-size: 2rem">
-      <h1>Featured</h1>
+    <h1>Featured</h1>
+    <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}" style="font-size: 2rem">    
     {% for article in blog.articles %}
       {% if article.tags contains 'fixed' %}
         <div class="blog-articles__article article">
@@ -42,7 +41,7 @@
         </div> 
       {% endif %}
     {% endfor %}
-      
+      <hr>
       {%- for article in blog.articles -%}
       {% unless article.tags contains 'fixed' %}
         <div class="blog-articles__article article">
