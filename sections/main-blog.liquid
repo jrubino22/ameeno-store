@@ -3,6 +3,10 @@
 {{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+  body {
+    background-color: white;
+  }
+
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -15,30 +19,32 @@
     }
   }
 {%- endstyle -%}
-<h1>Featured</h1>
-{% for article in blog.articles %}
-  {% if article.tags contains 'fixed' %}
-  <div class="blog-articles__article article">
-    {%- render 'article-card',
-      article: article,
-      media_height: section.settings.image_height,
-      media_aspect_ratio: article.image.aspect_ratio,
-      show_image: section.settings.show_image,
-      show_date: section.settings.show_date,
-      show_author: section.settings.show_author,
-      show_excerpt: true 
-    -%}
-  </div> 
-  {% endif %}
-{% endfor %}
+
 
 {%- paginate blog.articles by 30 -%}
   <div class="main-blog page-width section-{{ section.id }}-padding">
     <h1 class="title--primary">{{ blog.title | escape }}</h1>
 
     <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}" style="font-size: 2rem">
-      {% unless  %}
+      <h1>Featured</h1>
+    {% for article in blog.articles %}
+      {% if article.tags contains 'fixed' %}
+        <div class="blog-articles__article article">
+          {%- render 'article-card',
+            article: article,
+            media_height: section.settings.image_height,
+            media_aspect_ratio: article.image.aspect_ratio,
+            show_image: section.settings.show_image,
+            show_date: section.settings.show_date,
+            show_author: section.settings.show_author,
+            show_excerpt: true 
+          -%}
+        </div> 
+      {% endif %}
+    {% endfor %}
+      
       {%- for article in blog.articles -%}
+      {% unless article.tags contains 'fixed' %}
         <div class="blog-articles__article article">
           {%- render 'article-card',
             article: article,
@@ -50,6 +56,7 @@
             show_excerpt: true 
           -%}
         </div>
+      {% endunless %}
       {%- endfor -%}
     </div>
 
