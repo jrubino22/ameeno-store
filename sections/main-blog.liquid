@@ -24,7 +24,7 @@
 {%- paginate blog.articles by 30 -%}
   <div class="main-blog page-width section-{{ section.id }}-padding" style="background-color: white;">
     <h1 class="title--primary">{{ blog.title | escape }}</h1>
-    <h1>Featured</h1>
+    <h2 style="margin-left: 50%">Featured</h2>
     <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}" style="font-size: 2rem">    
     {% for article in blog.articles %}
       {% if article.tags contains 'fixed' %}
