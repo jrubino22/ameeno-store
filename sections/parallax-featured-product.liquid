@@ -1,5 +1,5 @@
 
-<div class="video-wrapper">
+<div class="video-wrapper top-vw">
   <figure>
     <video loop muted="muted" autoplay>
       <source src="{{ section.settings.img_product }}"/>
@@ -20,12 +20,13 @@
 </div>
 
 <script>
-  // $(window).on("scroll", function(){
-  // if($(window).scrollTop() + $(window).height() - 100 >= $(".stretch3").offset().top){
-  //   alert("On viewport");
-  // }
-  // })
+  $(document).ready(function() {
+    const vidDiv = $(".top-vw");
+    const miniHeight = ($(".stretch3").height() + $(".stretch2").height()) * 1.5;
 
+    vidDiv.css("min-height", miniHeight)
+    
+  })
   jQuery(window).scroll(function () {
     const topLimit3 = jQuery(".stretch3").offset().top - jQuery(window).height()
     const bottomLimit3 = jQuery(".stretch3").offset().top + jQuery(".stretch3").height() 
