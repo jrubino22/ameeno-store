@@ -1,6 +1,6 @@
 
-<div class="video-wrapper">
-  <figure class="top-vw">
+<div class="video-wrapper top-vw">
+  <figure>
     <video loop muted="muted" autoplay>
       <source src="{{ section.settings.img_product }}"/>
     </video>
@@ -26,7 +26,7 @@
 
     console.log("miniHeight:", miniHeight)
 
-    vidDiv.css("min-height", miniHeight)
+    vidDiv.css("min-height", miniHeight+"px")
     
   })
   jQuery(window).scroll(function () {
