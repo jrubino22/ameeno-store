@@ -2905,6 +2905,10 @@ details-disclosure > details {
   }
 }
 
+.h1-header-fs {
+  font-size: 4.0rem !important;
+}
+
 .font-body-bold {
   font-weight: var(--font-body-weight-bold);
 }
@@ -3060,6 +3064,3 @@ padding: 10px;
   font-size: 1.4rem !important;
 }
 
-.h1-header-fs {
-  font-size: 4.0rem !important;
-}
