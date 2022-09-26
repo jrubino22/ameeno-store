@@ -2916,9 +2916,7 @@ html, body {
   box-sizing: border-box !important;
   
  }
-body {
-  font-size: 1em !important;
- } 
+
 
 .video-wrapper {
   position: fixed;
