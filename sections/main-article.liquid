@@ -11,7 +11,7 @@
       {%- when 'featured_image'-%}
         {%- if article.image -%}
           <div class="article-template__hero-container" {{ block.shopify_attributes }}>
-            <div style="background-color: white; margin-top:3%;" class="article-template__hero-{{ block.settings.image_height }} media"
+            <div class="article-template__hero-{{ block.settings.image_height }} media"
               itemprop="image"
               {% if block.settings.image_height == 'adapt' and article.image %} style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"{% endif %}
             >
@@ -32,7 +32,7 @@
             </div>
           </div>
         {%- endif -%}
-
+    
         {%- when 'title'-%}
           <header class="page-width page-width--narrow" {{ block.shopify_attributes }}>
             <h1 class="article-template__title" itemprop="headline">{{ article.title | escape }}</h1>
