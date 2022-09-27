@@ -10,10 +10,11 @@
 @media screen and (max-width: 750px) {
   .article-wrap-div {
     margin: 0;
-    
+
   }
 }
 </style>
+
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting" >
   {%- for block in section.blocks -%}
     {%- case block.type -%}
@@ -28,7 +29,7 @@
               itemprop="image"
               {% if block.settings.image_height == 'adapt' and article.image %} style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"{% endif %}
             >
-              <img
+              <img class="blog-pic"
                 srcset="{% if article.image.width >= 350 %}{{ article.image | image_url: width: 350 }} 350w,{% endif %}
                   {% if article.image.width >= 750 %}{{ article.image | image_url: width: 750 }} 750w,{% endif %}
                   {% if article.image.width >= 1100 %}{{ article.image | image_url: width: 1100 }} 1100w,{% endif %}
@@ -261,6 +262,19 @@
   </div>
   {%- endif -%}
 </article>
+
+
+<script>
+
+  $(document).ready(function(){
+    const windowWidth = $(window).width();
+    const imageWidth = $(".blog-pic").width();
+    const newMargins = (windowWidth - imageWidth) / 2;
+
+    $(".article-wrap-div").css("margin", "0 "+newMargins+"px")
+  })
+
+</script>
 
 <script type="application/ld+json">
   {
