@@ -26,11 +26,13 @@
   <script>
     $(document).ready(function(){
       const viewportWidth = $("body").innerWidth();
-      const goalHeight = $(".par-bot-box").height() * 1.5
+      const goalHeight = $(".par-bot-box").height() * 1.9
+      const indyContainers = $(".par-bot-box")
 
       if(viewportWidth < 769) {
         console.log(viewportWidth)
         $(".bottomVid").css("min-height", goalHeight)
+        indyContainers.css("max-width", "60%")
       }
     })
   </script>
