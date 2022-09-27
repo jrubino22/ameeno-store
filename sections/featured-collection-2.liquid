@@ -4,7 +4,7 @@
             <h3 style="font-size: 3rem">{{ section.settings.description_2 }}</h3>
         </div>
     </div>
-    <div style="float: right; width: 60%">
+    <div class="product-box" style="float: right; width: 60%">
         {% for product in section.settings.collection.products%}
             <div style="margin-top: 10%; margin-bottom: 20%;">
                 <div style="display: inline-block; vertical-align: middle;">
@@ -22,30 +22,43 @@
 </div>
 
 <script>
-    $(window).scroll(function(e){ 
-  var $el = $('.fixedElement'); 
-  var fromTop = $('.leftDiv').offset().top;
-  var divHeight = $('.fc2Div').height();
-  var viewportHeight = $("body").innerHeight()
-  var bottomLimit = fromTop + divHeight - viewportHeight
-  var isPositionFixed = ($el.css('position') == 'fixed');
-  if ($(this).scrollTop() > fromTop && $(this).scrollTop() < bottomLimit && !isPositionFixed){ 
-    $el.fadeIn('slow');
-    $el.css({'position': 'fixed', 'top': '50%', 'left': '8%', 'max-width': '20%', 'display':'block'}); 
-  }
-  if ($(this).scrollTop() < fromTop && isPositionFixed){
-    $el.fadeOut('slow');
-    $el.css({'position':'absolute', 'display': 'none'}); 
-  } 
-  if ($(this).scrollTop() > bottomLimit && isPositionFixed){ 
-    $el.fadeOut('slow');
-    $el.css({'position':'absolute', 'display':'none'}); 
-  }
-  if ($(this).scrollTop() < bottomLimit && $(this).scrollTop() > fromTop && !isPositionFixed){
-    $el.fadeIn('slow');
-    $el.css({'position': 'fixed', 'top': '50%', 'left':'8%', 'max-width': '20%', 'display': 'block'}); 
-  } 
-});
+
+if ($("body").innerWidth() > 768) {
+  $(window).scroll(function(e){ 
+    var $el = $('.fixedElement'); 
+    var fromTop = $('.leftDiv').offset().top;
+    var divHeight = $('.fc2Div').height();
+    var viewportHeight = $("body").innerHeight()
+    var bottomLimit = fromTop + divHeight - viewportHeight
+    var isPositionFixed = ($el.css('position') == 'fixed');
+    if ($(this).scrollTop() > fromTop && $(this).scrollTop() < bottomLimit && !isPositionFixed){ 
+      $el.fadeIn('slow');
+      $el.css({'position': 'fixed', 'top': '50%', 'left': '8%', 'max-width': '20%', 'display':'block'}); 
+    }
+    if ($(this).scrollTop() < fromTop && isPositionFixed){
+      $el.fadeOut('slow');
+      $el.css({'position':'absolute', 'display': 'none'}); 
+    } 
+    if ($(this).scrollTop() > bottomLimit && isPositionFixed){ 
+      $el.fadeOut('slow');
+      $el.css({'position':'absolute', 'display':'none'}); 
+    }
+    if ($(this).scrollTop() < bottomLimit && $(this).scrollTop() > fromTop && !isPositionFixed){
+      $el.fadeIn('slow');
+      $el.css({'position': 'fixed', 'top': '50%', 'left':'8%', 'max-width': '20%', 'display': 'block'}); 
+    } 
+  });
+} else {
+
+  $(document).ready(function(){
+
+    const prodBox = $(".product-box")
+
+    prodBox.css({'float':'left', 'width': '90%'})
+
+  })
+
+}
 </script>
 
 {% schema %}
