@@ -2,11 +2,11 @@
 <style>
   .article-wrap-div{
     background-color: white;
-    max-width: 80%;
+    margin: 0 10%;
     padding-bottom: 4%;
   }
 </style>
-<article class="article-template" itemscope itemtype="http://schema.org/BlogPosting" class="text-align: center" >
+<article class="article-template" itemscope itemtype="http://schema.org/BlogPosting" >
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when '@app' -%}
