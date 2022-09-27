@@ -270,8 +270,10 @@
     const windowWidth = $(window).width();
     const imageWidth = $(".blog-pic").width();
     const newMargins = (windowWidth - imageWidth) / 2;
+    const headerHeight = (".header").height()
 
     $(".article-wrap-div").css("margin", "0 "+newMargins+"px")
+    $(".blog-pic").css("margin-top", headerHeight+"px")
   })
 
 </script>
