@@ -5,13 +5,13 @@
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when '@app' -%}
-        <div class="page-width page-width--narrow" style="background-color: white; margin-top:3%;">
+        <div class="page-width page-width--narrow">
           {% render block %}
         </div>
       {%- when 'featured_image'-%}
         {%- if article.image -%}
           <div class="article-template__hero-container" {{ block.shopify_attributes }}>
-            <div class="article-template__hero-{{ block.settings.image_height }} media"
+            <div style="background-color: white; margin-top:3%;" class="article-template__hero-{{ block.settings.image_height }} media"
               itemprop="image"
               {% if block.settings.image_height == 'adapt' and article.image %} style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"{% endif %}
             >
