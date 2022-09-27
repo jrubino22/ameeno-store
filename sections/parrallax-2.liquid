@@ -1,6 +1,6 @@
 
 <div class="video-container-bottom">
-  <video autoplay muted loop>
+  <video autoplay muted loop class="bottomVid">
       <source src="{{ section.settings.img_product_2 }}" type="video/mp4" />
     </video>
   <div class="caption" >
@@ -9,7 +9,7 @@
       <p>{{ section.settings.section_text_2 }}</p>
     </div>
   </div>
-  <div class="container text-center col-container" >
+  <div class="container text-center col-container par-bot-box" >
     <div class="row align-items-start">
       {% for block in section.blocks %}
           <div class="col col-12 col-md-3 boot-caption">
@@ -17,12 +17,22 @@
             <h3 style="margin-bottom: 2%;">{{block.settings.title}}</h3>
             <i class="fa-solid fa-{{block.settings.icon}} fa-5x"></i>     
             </a>     
-          </div>
-        
+          </div>       
       {% endfor %}
     </div>         
   </div>   
   </div>
+
+  <script>
+    $(document).load(function(){
+      const viewportWidth = $("body").innerWidth();
+      const goalHeight = $(".par-bot-box").height() * 4.5
+
+      if(viewportWidth < 769) {
+        $(".bottomVid").css("min-height", goalHeight)
+      }
+    })
+  </script>
     
   {% schema %} 
   { 
