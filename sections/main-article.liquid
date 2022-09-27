@@ -1,6 +1,9 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
-
-
+<style>
+  body{
+background-color: white !important; margin-top:8%;
+  }
+</style>
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting" >
   {%- for block in section.blocks -%}
     {%- case block.type -%}
