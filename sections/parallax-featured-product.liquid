@@ -16,7 +16,9 @@
 
 <script>
   $(document).ready(function(){
+    console.log("width", $("body").innerWidth())
     if ($("body").innerWidth() < 769){
+      console.log("width", $("body").innerWidth())
       $(".video-wrapper").html("<figure><img class='top-vw' src='{{ section.settings.mobile_img }}' alt='{{ section.settings.alt_desc }}'></figure>")
     }else{
       $(".video-wrapper").html("<figure><video class='top-vw' loop muted='muted' autoplay='true'><source src='{{ section.settings.img_product }}'/></video></figure>")
