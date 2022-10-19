@@ -17,9 +17,9 @@
 <script>
   $(document).ready(function(){
     if ($("body").innerWidth() < 769){
-      $(".video-wrapper").html("<figure><img class="top-vw" src="{{ section.settings.mobile_img }}" alt="{{ section.settings.alt_desc }}"></figure>")
+      $(".video-wrapper").html("<figure><img class='top-vw' src='{{ section.settings.mobile_img }}' alt='{{ section.settings.alt_desc }}'></figure>")
     }else{
-      $(".video-wrapper").html("<figure><video class="top-vw" loop muted="muted" autoplay="true"><source src="{{ section.settings.img_product }}"/></video></figure>")
+      $(".video-wrapper").html("<figure><video class='top-vw' loop muted='muted' autoplay='true'><source src='{{ section.settings.img_product }}'/></video></figure>")
     }
   });
 
