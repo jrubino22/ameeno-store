@@ -21,7 +21,7 @@
 
     if ($("body").innerWidth() < 769){
       console.log("width", $("body").innerWidth())
-      $(".img-wrapper-plax").css("background-image", "url('{{ section.settings.mobile_img }}')")
+      $(".img-wrapper-plax").css({"background-image": "url('{{ section.settings.mobile_img }}')", "max-width": $("body").innerWidth() })
     }else{
       $(".video-wrapper").html("<figure><video class='top-vw' loop muted='muted' autoplay='true'><source src='{{ section.settings.img_product }}'/></video></figure>")
     }
