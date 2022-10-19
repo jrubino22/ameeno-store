@@ -1,16 +1,17 @@
-
-<div class="video-wrapper ">
-</div>
-<div class="stretch3" >
+<div class="img-wrapper-plax">
+  <div class="video-wrapper">
+  </div>
+  <div class="stretch3" >
     <div class="codecontainer">
       <h2>{{ section.settings.section_title }}</h2>
       <p>{{ section.settings.section_text }}</p>
     </div>
-</div>
-<div class="stretch2">
-  <div class="codecontainer">
-    <h2>{{ section.settings.section_title2 }}</h2>
-    <p>{{ section.settings.section_text2 }}</p>
+  </div>
+  <div class="stretch2">
+    <div class="codecontainer">
+      <h2>{{ section.settings.section_title2 }}</h2>
+      <p>{{ section.settings.section_text2 }}</p>
+    </div>
   </div>
 </div>
 
@@ -20,7 +21,7 @@
 
     if ($("body").innerWidth() < 769){
       console.log("width", $("body").innerWidth())
-      $(".video-wrapper").html("<figure><img class='top-vw' src='{{ section.settings.mobile_img }}' height=`${imgHeight1}px` alt='{{ section.settings.alt_desc }}'></figure>")
+      $("img-wrapper-plax").css("background-image", "{{ section.settings.mobile_img }}")
     }else{
       $(".video-wrapper").html("<figure><video class='top-vw' loop muted='muted' autoplay='true'><source src='{{ section.settings.img_product }}'/></video></figure>")
     }
