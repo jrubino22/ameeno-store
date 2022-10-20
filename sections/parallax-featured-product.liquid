@@ -24,8 +24,10 @@
       $(".video-wrapper").remove()
       $(".stretch3").css("margin-top", "0px")
       $(".img-wrapper-plax").css({"background-image": "url('{{ section.settings.mobile_img }}')", "max-width": $("body").innerWidth(), "padding-top": "120px" })
-      $(".cc1")
-    }else{
+      $(".cc1").html("<h2>{{ section.settings.section_title }}</h2><p>{{ section.settings.mobile_text1 }}</p>")
+      $(".cc2").html("<h2>{{ section.settings.section_title2 }}</h2><p>{{ section.settings.mobile_text2 }}</p>")
+    }
+    else{
       $(".video-wrapper").html("<figure><video class='top-vw' loop muted='muted' autoplay='true'><source src='{{ section.settings.img_product }}'/></video></figure>")
       $(".cc1").html("<h2>{{ section.settings.section_title }}</h2><p>{{ section.settings.section_text }}</p>")
       $(".cc2").html("<h2>{{ section.settings.section_title2 }}</h2><p>{{ section.settings.section_text2 }}</p>")
@@ -124,6 +126,11 @@ if (jQuery(this).scrollTop() > jQuery(".stretch2").offset().top - jQuery(window)
       "label": "Section content 1" 
     },
     { 
+      "type": "richtext", 
+      "id": "mobile_text1", 
+      "label": "Mobile content 1" 
+    },
+    { 
       "type": "text", 
       "id": "section_title2", 
       "label": "Section title 2" 
@@ -132,6 +139,11 @@ if (jQuery(this).scrollTop() > jQuery(".stretch2").offset().top - jQuery(window)
       "type": "richtext", 
       "id": "section_text2", 
       "label": "Section content 2" 
+    }
+    { 
+      "type": "richtext", 
+      "id": "mobile_text2", 
+      "label": "Mobile content 2" 
     }
   ], 
   "presets": [ 
