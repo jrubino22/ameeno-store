@@ -23,7 +23,7 @@
       console.log("width", $("body").innerWidth())
       $(".video-wrapper").remove()
       $(".stretch3").css("margin-top", "0px")
-      $(".img-wrapper-plax").css({"background-image": "url('{{ section.settings.mobile_img }}')", "max-width": $("body").innerWidth(), "padding-top": "120px" })
+      $(".img-wrapper-plax").css({"background-image": "url('{{ section.settings.mobile_img }}')", "max-width": $("body").innerWidth(), "padding": "120px 0" })
       $(".cc1").html("<h2>{{ section.settings.section_title }}</h2><p>{{ section.settings.mobile_text1 }}</p>")
       $(".cc2").html("<h2>{{ section.settings.section_title2 }}</h2><p>{{ section.settings.mobile_text2 }}</p>")
     }
