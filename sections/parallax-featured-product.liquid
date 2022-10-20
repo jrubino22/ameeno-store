@@ -2,15 +2,15 @@
   <div class="video-wrapper">
   </div>
   <div class="stretch3" >
-    <div class="codecontainer">
-      <h2>{{ section.settings.section_title }}</h2>
-      <p>{{ section.settings.section_text }}</p>
+    <div class="codecontainer cc1">
+      {%- comment -%} <h2>{{ section.settings.section_title }}</h2>
+      <p class="">{{ section.settings.section_text }}</p> {%- endcomment -%}
     </div>
   </div>
   <div class="stretch2">
-    <div class="codecontainer">
-      <h2>{{ section.settings.section_title2 }}</h2>
-      <p>{{ section.settings.section_text2 }}</p>
+    <div class="codecontainer cc2">
+      {%- comment -%} <h2>{{ section.settings.section_title2 }}</h2>
+      <p>{{ section.settings.section_text2 }}</p> {%- endcomment -%}
     </div>
   </div>
 </div>
@@ -24,8 +24,11 @@
       $(".video-wrapper").remove()
       $(".stretch3").css("margin-top", "0px")
       $(".img-wrapper-plax").css({"background-image": "url('{{ section.settings.mobile_img }}')", "max-width": $("body").innerWidth(), "padding-top": "120px" })
+      $(".cc1")
     }else{
       $(".video-wrapper").html("<figure><video class='top-vw' loop muted='muted' autoplay='true'><source src='{{ section.settings.img_product }}'/></video></figure>")
+      $(".cc1").html("<h2>{{ section.settings.section_title }}</h2><p>{{ section.settings.section_text }}</p>")
+      $(".cc2").html("<h2>{{ section.settings.section_title2 }}</h2><p>{{ section.settings.section_text2 }}</p>")
     }
   });
 
