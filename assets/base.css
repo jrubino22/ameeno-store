@@ -2981,22 +2981,22 @@ html, body {
   background:rgba(255, 255, 255, 0.7);
   margin-top: 20rem;
   margin-bottom:50rem;
-  padding: 1% 50%;
+  padding: 1%;
   overflow-x: clip;
-  text-align: right
+  text-align: center
 }
 
 .stretch2 {
   position: relative;
   bottom:50%;
-  right:-80%;
-  width:80%;
-  margin-left: 40%;
+  right:-60%;
+  width:60%;
+  margin-left:40%;
   height: auto;
   font-size: 3rem;
-  margin-top: 20rem;
+  margin-top: 30rem;
   margin-bottom:20rem;
-  padding: 1% 50%;
+  padding: 1%;
   background: rgba(255, 255, 255, 0.7);
   overflow-x: clip
 }
