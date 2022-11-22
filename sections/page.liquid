@@ -29,7 +29,7 @@
     </h2>
     <div class="rte">
       {%- if section.settings.page.content != blank -%}
-        {{ section.settings.page.content }}
+        <p class="norm-font">{{ section.settings.page.content }}</p>
       {%- else -%}
         <div class='page-placeholder-wrapper placeholder'>
           {{ 'page' | placeholder_svg_tag: 'page-placeholder' }}
