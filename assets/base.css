@@ -2986,12 +2986,16 @@ html, body {
   text-align: center
 }
 
+.stretch2 h2 {
+  font-size: 3rem;
+}
+
 .stretch2 {
   position: relative;
   bottom:50%;
-  right:-60%;
-  width:60%;
-  margin-left:40%;
+  right:-40%;
+  width:40%;
+  margin-left:60%;
   height: auto;
   font-size: 3rem;
   margin-top: 30rem;
