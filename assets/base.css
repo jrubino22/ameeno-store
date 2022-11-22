@@ -2981,7 +2981,7 @@ html, body {
   background:rgba(255, 255, 255, 0.7);
   margin-top: 20rem;
   margin-bottom:50rem;
-  padding: 0%;
+  padding: 1% 50%;
   overflow-x: clip;
   text-align: right
 }
@@ -2996,7 +2996,7 @@ html, body {
   font-size: 3rem;
   margin-top: 20rem;
   margin-bottom:20rem;
-  padding: 0%;
+  padding: 1% 50%;
   background: rgba(255, 255, 255, 0.7);
   overflow-x: clip
 }
