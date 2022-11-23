@@ -21,22 +21,24 @@
     background-color: white;
   }
 {%- endstyle -%}
-<div class="container">
-    <div class="row align-middle">
-        <div class="col-12 col-md-6 align-middle">
-    
-              <h1 class="main-page-title page-title h0">
-                  {{ page.title | escape }}
-              </h1>
-              <div class="rte norm-font">
-              {{ page.content }} 
-              </div>
-          
-        </div>
-        <div class="col-12 col-md-6 align-middle">
-            <img style="max-width: 40%; height: auto;" src="{{ section.settings.img_side }}">
-        </div>
-    </div>
+<div class="page-width page-width--narrow section-{{ section.id }}-padding"></div>
+  <div class="container">
+      <div class="row">
+          <div class="col-12 col-md-6 align-middle">
+            
+                <h1 class="main-page-title page-title h0">
+                    {{ page.title | escape }}
+                </h1>
+                <div class="rte norm-font">
+                {{ page.content }} 
+                </div>
+              
+          </div>
+          <div class="col-12 col-md-6 align-middle">
+              <img style="max-width: 40%; height: auto;" src="{{ section.settings.img_side }}">
+          </div>
+      </div>
+  </div>   
 </div>
 {% schema %}
 {
