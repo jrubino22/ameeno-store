@@ -13,7 +13,7 @@
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
-            "slide_caption": "Peptides are a <u>Science<\/u>.",
+            "slide_caption": "<p>Peptides are a science.<\/p>",
             "box_align": "bottom-center",
             "show_text_box": false,
             "text_alignment": "center",
@@ -68,22 +68,26 @@
       ],
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "adapt_image",
+        "slide_height": "large",
         "slider_visual": "counter",
         "auto_rotate": false,
-        "change_slides_speed": 5,
-        "show_text_below": true,
+        "change_slides_speed": 9,
+        "show_text_below": false,
         "accessibility_info": "Slideshow about our brand"
       }
     },
     "1660938627e0a8a814": {
       "type": "parallax-featured-product",
       "settings": {
-        "img_product": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/2b91c3d770b14c84a4a9db6b6f7ff9c5.mp4",
-        "section_title": "Section Title",
-        "section_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales volutpat lacus non facilisis. In non nunc vitae mi pellentesque suscipit. Praesent lectus orci, hendrerit in luctus sed, cursus luctus turpis. Sed condimentum facilisis lectus, eu ultricies risus volutpat eget. Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed nec tincidunt nulla. Suspendisse potenti. Curabitur condimentum nec nulla sit amet sagittis. In nec rutrum urna, ac elementum quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p><p>Morbi et mi elit. Praesent eget eros volutpat, pulvinar ligula quis, porta lorem. Quisque neque sem, laoreet nec bibendum id, rhoncus non felis. Suspendisse tempus, velit eu congue sollicitudin, dolor nisl convallis eros, a cursus ex urna quis lacus. Mauris fringilla nec tellus non mattis. Phasellus finibus fringilla porta. Proin at consectetur metus. Nam et orci sit amet nulla malesuada faucibus in iaculis neque.<\/p>",
-        "section_title2": "Section Title",
-        "section_text2": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales volutpat lacus non facilisis. In non nunc vitae mi pellentesque suscipit. Praesent lectus orci, hendrerit in luctus sed, cursus luctus turpis. Sed condimentum facilisis lectus, eu ultricies risus volutpat eget. Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed nec tincidunt nulla. Suspendisse potenti. Curabitur condimentum nec nulla sit amet sagittis. In nec rutrum urna, ac elementum quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<\/p><p>Morbi et mi elit. Praesent eget eros volutpat, pulvinar ligula quis, porta lorem. Quisque neque sem, laoreet nec bibendum id, rhoncus non felis. Suspendisse tempus, velit eu congue sollicitudin, dolor nisl convallis eros, a cursus ex urna quis lacus. Mauris fringilla nec tellus non mattis. Phasellus finibus fringilla porta. Proin at consectetur metus. Nam et orci sit amet nulla malesuada faucibus in iaculis neque.<\/p>"
+        "img_product": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/27ab9e7cf575427086424dc10d387d93.mp4",
+        "mobile_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0594\/1886\/9853\/files\/running_stadium.jpg?v=1666287559",
+        "alt_desc": "",
+        "section_title": "Most peptides can't absorb orally......",
+        "section_text": "",
+        "mobile_text1": "",
+        "section_title2": "Until now.",
+        "section_text2": "",
+        "mobile_text2": ""
       }
     },
     "1661445816e4f98c42": {
@@ -91,7 +95,7 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
-        "description": "We believe the <u>Science<\/u> of Peptides demands a new standard",
+        "description_2": "Introducing Ameeno.\n<br><br>\nThe latest innovation in peptide supplements.",
         "show_description": true,
         "description_style": "body",
         "collection": "peptides",
@@ -113,14 +117,84 @@
         "padding_bottom": 36
       }
     },
-    "1661463547bccff113": {
-      "type": "parallax-featured-product",
+    "16619616616a46c313": {
+      "type": "parrallax-2",
+      "blocks": {
+        "3a1d24b5-3d9a-4232-ba90-4057b38e51df": {
+          "type": "column",
+          "settings": {
+            "title": "Blog",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "icon": "pen",
+            "link_label": "Visit Blog",
+            "link": "shopify:\/\/blogs\/ameeno-blog"
+          }
+        },
+        "f37a2c76-5862-40c8-b0d6-9369875dddd9": {
+          "type": "column",
+          "settings": {
+            "title": "About Ameeno",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "icon": "circle-info",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "daa920da-50b9-4798-ac91-b3f7f7541a00": {
+          "type": "column",
+          "settings": {
+            "title": "FAQ",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "icon": "question",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "3a1d24b5-3d9a-4232-ba90-4057b38e51df",
+        "f37a2c76-5862-40c8-b0d6-9369875dddd9",
+        "daa920da-50b9-4798-ac91-b3f7f7541a00"
+      ],
       "settings": {
-        "img_product": "",
-        "section_title": "",
-        "section_text": "",
-        "section_title2": "",
-        "section_text2": ""
+        "img_product_2": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/88b771955cc749ad8a9b7b49f77818a3.mp4",
+        "section_title_2": "Discover the Power of Peptides",
+        "section_text_2": ""
+      }
+    },
+    "16639648332e26b5ae": {
+      "type": "newsletter",
+      "blocks": {
+        "16639648338a1bcbc2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "16639648338a1bcbc2-1": {
+          "type": "paragraph",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "16639648338a1bcbc2-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "16639648338a1bcbc2-0",
+        "16639648338a1bcbc2-1",
+        "16639648338a1bcbc2-2"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "padding_top": 48,
+        "padding_bottom": 0
       }
     }
   },
@@ -128,6 +202,7 @@
     "slideshow",
     "1660938627e0a8a814",
     "1661445816e4f98c42",
-    "1661463547bccff113"
+    "16619616616a46c313",
+    "16639648332e26b5ae"
   ]
 }
